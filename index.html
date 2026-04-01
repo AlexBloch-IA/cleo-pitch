@@ -1,0 +1,974 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cleo Insight — Intelligence Réglementaire</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+<style>
+*, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+
+:root {
+  --black: #0a0a0a;
+  --white: #fafafa;
+  --gray-50: #f5f5f5;
+  --gray-100: #e8e8e8;
+  --gray-200: #d4d4d4;
+  --gray-400: #a3a3a3;
+  --gray-500: #737373;
+  --gray-600: #525252;
+  --gray-800: #262626;
+  --purple: #7c3aed;
+  --purple-light: #ede9fe;
+  --purple-50: #f5f3ff;
+  --sans: 'DM Sans', -apple-system, sans-serif;
+  --serif: 'Instrument Serif', Georgia, serif;
+}
+
+html { scroll-behavior: smooth; font-size: 16px; }
+
+body {
+  font-family: var(--sans);
+  color: var(--black);
+  background: var(--white);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+}
+
+/* ─── Reveal Animation System ─── */
+.reveal {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: opacity 0.9s cubic-bezier(0.25, 0.46, 0.45, 0.94),
+              transform 0.9s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+.reveal.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+.reveal-delay-1 { transition-delay: 0.1s; }
+.reveal-delay-2 { transition-delay: 0.2s; }
+.reveal-delay-3 { transition-delay: 0.3s; }
+.reveal-delay-4 { transition-delay: 0.4s; }
+.reveal-delay-5 { transition-delay: 0.5s; }
+
+/* ─── Section Base ─── */
+section {
+  padding: 120px 40px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.section-dark {
+  background: var(--black);
+  color: var(--white);
+  max-width: 100%;
+  padding-left: 40px;
+  padding-right: 40px;
+}
+.section-dark > .inner { max-width: 1200px; margin: 0 auto; }
+
+.section-soft {
+  background: var(--gray-50);
+  max-width: 100%;
+  padding-left: 40px;
+  padding-right: 40px;
+}
+.section-soft > .inner { max-width: 1200px; margin: 0 auto; }
+
+.section-label {
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--gray-500);
+  margin-bottom: 24px;
+}
+.section-dark .section-label { color: var(--gray-400); }
+
+h2 {
+  font-family: var(--serif);
+  font-weight: 400;
+  font-size: clamp(2.5rem, 5vw, 4rem);
+  line-height: 1.1;
+  letter-spacing: -0.02em;
+  margin-bottom: 24px;
+}
+
+h3 {
+  font-family: var(--sans);
+  font-weight: 500;
+  font-size: 1.25rem;
+  margin-bottom: 12px;
+}
+
+.subtitle {
+  font-size: clamp(1rem, 1.5vw, 1.25rem);
+  color: var(--gray-600);
+  line-height: 1.7;
+  max-width: 640px;
+}
+.section-dark .subtitle { color: var(--gray-400); }
+
+/* ═══════════════════════════════════════ */
+/* HERO                                    */
+/* ═══════════════════════════════════════ */
+.hero {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  position: relative;
+  padding: 80px 40px;
+}
+
+.hero::before {
+  content: '';
+  position: absolute;
+  top: -20%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 800px;
+  height: 800px;
+  background: radial-gradient(circle, rgba(124,58,237,0.06) 0%, transparent 70%);
+  pointer-events: none;
+  animation: heroPulse 8s ease-in-out infinite;
+}
+
+@keyframes heroPulse {
+  0%, 100% { opacity: 0.5; transform: translateX(-50%) scale(1); }
+  50% { opacity: 1; transform: translateX(-50%) scale(1.1); }
+}
+
+.hero-wordmark {
+  font-family: var(--sans);
+  font-weight: 300;
+  font-size: 1rem;
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+  color: var(--gray-500);
+  margin-bottom: 48px;
+}
+
+.hero h1 {
+  font-family: var(--serif);
+  font-weight: 400;
+  font-size: clamp(3rem, 8vw, 6.5rem);
+  line-height: 1.05;
+  letter-spacing: -0.03em;
+  margin-bottom: 32px;
+  max-width: 900px;
+}
+
+.hero h1 em {
+  font-style: italic;
+  color: var(--purple);
+}
+
+.hero .subtitle {
+  margin: 0 auto 56px;
+  font-size: clamp(1.1rem, 1.8vw, 1.35rem);
+}
+
+.hero-cta {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 16px 36px;
+  background: var(--black);
+  color: var(--white);
+  border-radius: 100px;
+  font-size: 0.95rem;
+  font-weight: 500;
+  text-decoration: none;
+  transition: all 0.4s ease;
+  border: none;
+  cursor: pointer;
+}
+.hero-cta:hover { background: var(--purple); transform: scale(1.02); }
+.hero-cta svg { width: 16px; height: 16px; transition: transform 0.3s; }
+.hero-cta:hover svg { transform: translateX(4px); }
+
+.scroll-hint {
+  position: absolute;
+  bottom: 40px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 0.75rem;
+  color: var(--gray-400);
+  letter-spacing: 0.1em;
+  animation: scrollHint 2s ease-in-out infinite;
+}
+@keyframes scrollHint {
+  0%, 100% { opacity: 0.4; transform: translateX(-50%) translateY(0); }
+  50% { opacity: 1; transform: translateX(-50%) translateY(6px); }
+}
+
+/* ═══════════════════════════════════════ */
+/* PROBLEM                                 */
+/* ═══════════════════════════════════════ */
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1px;
+  background: var(--gray-800);
+  margin-top: 72px;
+  border-radius: 16px;
+  overflow: hidden;
+}
+
+.stat-card {
+  background: var(--black);
+  padding: 56px 40px;
+  text-align: center;
+}
+
+.stat-number {
+  font-family: var(--serif);
+  font-size: clamp(2.5rem, 4vw, 3.5rem);
+  font-weight: 400;
+  color: var(--white);
+  line-height: 1;
+  margin-bottom: 16px;
+}
+
+.stat-label {
+  font-size: 0.85rem;
+  color: var(--gray-400);
+  line-height: 1.5;
+}
+
+/* ═══════════════════════════════════════ */
+/* HOW IT WORKS                            */
+/* ═══════════════════════════════════════ */
+.steps-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 48px;
+  margin-top: 72px;
+}
+
+.step {
+  position: relative;
+}
+
+.step-number {
+  font-family: var(--serif);
+  font-size: 5rem;
+  font-style: italic;
+  color: var(--gray-100);
+  line-height: 1;
+  margin-bottom: 24px;
+}
+
+.step h3 { font-size: 1.35rem; font-weight: 600; margin-bottom: 16px; }
+
+.step p {
+  font-size: 0.95rem;
+  color: var(--gray-600);
+  line-height: 1.7;
+}
+
+.step-line {
+  position: absolute;
+  top: 48px;
+  right: -24px;
+  width: 48px;
+  height: 1px;
+  background: var(--gray-200);
+}
+.step:last-child .step-line { display: none; }
+
+/* ═══════════════════════════════════════ */
+/* PIPELINE                                */
+/* ═══════════════════════════════════════ */
+.pipeline-models {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+  margin-top: 72px;
+  margin-bottom: 80px;
+}
+
+.model-card {
+  border: 1px solid rgba(255,255,255,0.08);
+  border-radius: 20px;
+  padding: 40px 32px;
+  background: rgba(255,255,255,0.03);
+  transition: all 0.4s ease;
+}
+.model-card:hover {
+  border-color: rgba(124,58,237,0.3);
+  background: rgba(124,58,237,0.05);
+}
+
+.model-tag {
+  display: inline-block;
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  padding: 6px 14px;
+  border-radius: 100px;
+  margin-bottom: 24px;
+}
+.model-tag.opus { background: rgba(124,58,237,0.15); color: #a78bfa; }
+.model-tag.sonnet { background: rgba(59,130,246,0.15); color: #93c5fd; }
+.model-tag.haiku { background: rgba(16,185,129,0.15); color: #6ee7b7; }
+
+.model-card h3 {
+  color: var(--white);
+  font-size: 1.5rem;
+  font-weight: 500;
+  margin-bottom: 12px;
+}
+
+.model-card p { color: var(--gray-400); font-size: 0.9rem; line-height: 1.6; }
+
+.pipeline-stats {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1px;
+  background: rgba(255,255,255,0.06);
+  border-radius: 16px;
+  overflow: hidden;
+}
+
+.pipeline-stat {
+  padding: 48px 24px;
+  text-align: center;
+  background: var(--black);
+}
+
+.pipeline-stat .stat-number {
+  font-size: clamp(2rem, 3.5vw, 3rem);
+  margin-bottom: 8px;
+}
+.pipeline-stat .stat-number .accent { color: var(--purple); }
+
+/* ═══════════════════════════════════════ */
+/* PRICING                                 */
+/* ═══════════════════════════════════════ */
+.pricing-toggle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  margin-top: 24px;
+  margin-bottom: 64px;
+  font-size: 0.9rem;
+  color: var(--gray-500);
+}
+
+.toggle-switch {
+  width: 52px;
+  height: 28px;
+  background: var(--gray-200);
+  border-radius: 100px;
+  position: relative;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+.toggle-switch.active { background: var(--purple); }
+.toggle-switch::after {
+  content: '';
+  position: absolute;
+  top: 3px;
+  left: 3px;
+  width: 22px;
+  height: 22px;
+  background: white;
+  border-radius: 50%;
+  transition: transform 0.3s;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.15);
+}
+.toggle-switch.active::after { transform: translateX(24px); }
+
+.pricing-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1px;
+  background: var(--gray-200);
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.pricing-card {
+  background: var(--white);
+  padding: 48px 32px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  transition: all 0.3s ease;
+}
+
+.pricing-card.featured {
+  background: var(--black);
+  color: var(--white);
+}
+
+.pricing-card.featured .pricing-label,
+.pricing-card.featured .pricing-features li {
+  color: var(--gray-400);
+}
+
+.pricing-badge {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  font-size: 0.65rem;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  padding: 5px 12px;
+  background: var(--purple);
+  color: white;
+  border-radius: 100px;
+}
+
+.pricing-name {
+  font-weight: 600;
+  font-size: 1.15rem;
+  margin-bottom: 8px;
+}
+
+.pricing-label {
+  font-size: 0.8rem;
+  color: var(--gray-500);
+  margin-bottom: 32px;
+  line-height: 1.5;
+}
+
+.pricing-price {
+  font-family: var(--serif);
+  font-size: 3rem;
+  font-weight: 400;
+  line-height: 1;
+  margin-bottom: 4px;
+}
+
+.pricing-period {
+  font-size: 0.8rem;
+  color: var(--gray-500);
+  margin-bottom: 32px;
+}
+.pricing-card.featured .pricing-period { color: var(--gray-400); }
+
+.pricing-features {
+  list-style: none;
+  flex: 1;
+  margin-bottom: 32px;
+}
+
+.pricing-features li {
+  font-size: 0.85rem;
+  color: var(--gray-600);
+  padding: 8px 0;
+  border-bottom: 1px solid rgba(0,0,0,0.04);
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.pricing-card.featured .pricing-features li { border-bottom-color: rgba(255,255,255,0.06); }
+
+.pricing-features li::before {
+  content: '✓';
+  font-size: 0.75rem;
+  color: var(--purple);
+  font-weight: 700;
+}
+
+.pricing-btn {
+  display: block;
+  text-align: center;
+  padding: 14px;
+  border-radius: 12px;
+  font-size: 0.9rem;
+  font-weight: 500;
+  text-decoration: none;
+  transition: all 0.3s;
+  border: 1px solid var(--gray-200);
+  color: var(--black);
+  background: transparent;
+  cursor: pointer;
+}
+.pricing-btn:hover { border-color: var(--black); }
+
+.pricing-card.featured .pricing-btn {
+  background: var(--purple);
+  border-color: var(--purple);
+  color: white;
+}
+.pricing-card.featured .pricing-btn:hover { background: #6d28d9; }
+
+/* ═══════════════════════════════════════ */
+/* MARKET POSITION                         */
+/* ═══════════════════════════════════════ */
+.comparison-table {
+  width: 100%;
+  margin-top: 64px;
+  border-collapse: collapse;
+}
+
+.comparison-table th,
+.comparison-table td {
+  text-align: left;
+  padding: 24px 32px;
+  font-size: 0.95rem;
+  border-bottom: 1px solid rgba(255,255,255,0.06);
+}
+
+.comparison-table th {
+  font-weight: 500;
+  color: var(--gray-400);
+  font-size: 0.75rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.comparison-table td:first-child { font-weight: 500; }
+.comparison-table td:last-child { color: var(--gray-400); }
+
+.comparison-table .highlight-row {
+  background: rgba(124,58,237,0.08);
+  border-radius: 12px;
+}
+.comparison-table .highlight-row td {
+  color: var(--white);
+  font-weight: 600;
+  border-bottom-color: transparent;
+}
+.comparison-table .highlight-row td:last-child { color: #a78bfa; }
+
+.savings-badge {
+  display: inline-block;
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  padding: 4px 10px;
+  background: var(--purple);
+  color: white;
+  border-radius: 6px;
+  margin-left: 12px;
+}
+
+/* ═══════════════════════════════════════ */
+/* UNIT ECONOMICS                          */
+/* ═══════════════════════════════════════ */
+.economics-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 32px;
+  margin-top: 64px;
+}
+
+.econ-card {
+  padding: 40px 32px;
+  border: 1px solid var(--gray-100);
+  border-radius: 16px;
+  transition: all 0.3s;
+}
+.econ-card:hover { border-color: var(--gray-200); transform: translateY(-2px); }
+
+.econ-value {
+  font-family: var(--serif);
+  font-size: 2.2rem;
+  font-weight: 400;
+  margin-bottom: 8px;
+}
+
+.econ-label {
+  font-size: 0.85rem;
+  color: var(--gray-500);
+  line-height: 1.5;
+}
+
+/* ═══════════════════════════════════════ */
+/* CTA                                     */
+/* ═══════════════════════════════════════ */
+.cta-section {
+  text-align: center;
+  padding: 160px 40px;
+}
+
+.cta-section h2 {
+  font-size: clamp(2.5rem, 5vw, 4.5rem);
+  margin-bottom: 24px;
+}
+
+.cta-section .subtitle {
+  margin: 0 auto 48px;
+}
+
+.cta-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 20px 48px;
+  background: var(--purple);
+  color: white;
+  border: none;
+  border-radius: 100px;
+  font-family: var(--sans);
+  font-size: 1.05rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.4s;
+  text-decoration: none;
+}
+.cta-btn:hover { background: #6d28d9; transform: scale(1.03); box-shadow: 0 20px 60px rgba(124,58,237,0.25); }
+
+/* ─── Footer ─── */
+footer {
+  text-align: center;
+  padding: 40px;
+  font-size: 0.8rem;
+  color: var(--gray-400);
+  border-top: 1px solid var(--gray-100);
+}
+
+/* ─── Responsive ─── */
+@media (max-width: 900px) {
+  section, .section-dark, .section-soft { padding: 80px 24px; }
+  .stats-grid, .steps-grid, .pipeline-models, .pipeline-stats { grid-template-columns: 1fr; }
+  .pricing-grid { grid-template-columns: 1fr 1fr; }
+  .economics-grid { grid-template-columns: 1fr 1fr; }
+  .step-line { display: none; }
+}
+
+@media (max-width: 600px) {
+  .pricing-grid { grid-template-columns: 1fr; }
+  .economics-grid { grid-template-columns: 1fr; }
+  .comparison-table th:last-child,
+  .comparison-table td:last-child { display: none; }
+}
+</style>
+</head>
+<body>
+
+<!-- ═══ HERO ═══ -->
+<section class="hero">
+  <div class="hero-wordmark reveal">Cleo Insight</div>
+  <h1 class="reveal reveal-delay-1">Intelligence réglementaire<br>propulsée par l'<em>IA</em></h1>
+  <p class="subtitle reveal reveal-delay-2">Découvrez automatiquement les régulations qui impactent votre entreprise.<br>Monitorez les changements. Agissez avant vos concurrents.</p>
+  <a href="#pricing" class="hero-cta reveal reveal-delay-3">
+    Diagnostic gratuit
+    <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 8h10M9 4l4 4-4 4"/></svg>
+  </a>
+  <div class="scroll-hint">Défiler ↓</div>
+</section>
+
+<!-- ═══ PROBLEM ═══ -->
+<section class="section-dark" style="padding-top: 140px; padding-bottom: 140px;">
+  <div class="inner">
+    <div class="section-label reveal">Le problème</div>
+    <h2 class="reveal reveal-delay-1" style="color: var(--white);">La conformité réglementaire<br>est devenue <em style="font-family: var(--serif); font-style: italic; color: var(--gray-400);">ingérable</em></h2>
+    <p class="subtitle reveal reveal-delay-2">Les entreprises font face à un tsunami réglementaire. CSRD, NIS2, AI Act, DORA — des centaines de textes qui évoluent chaque semaine. La veille manuelle ne suffit plus.</p>
+
+    <div class="stats-grid">
+      <div class="stat-card reveal reveal-delay-2">
+        <div class="stat-number" data-count="50000">0</div>
+        <div class="stat-label">entreprises concernées<br>par la CSRD d'ici 2027</div>
+      </div>
+      <div class="stat-card reveal reveal-delay-3">
+        <div class="stat-number">€4.3<span style="font-family: var(--sans); font-size: 0.5em;">Mds</span></div>
+        <div class="stat-label">d'amendes réglementaires<br>dans l'UE en 2025</div>
+      </div>
+      <div class="stat-card reveal reveal-delay-4">
+        <div class="stat-number" data-count="78">0</div>
+        <div class="stat-label">% des ETI n'ont pas<br>d'outil de veille automatisé</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ HOW IT WORKS ═══ -->
+<section style="padding-top: 140px; padding-bottom: 140px;">
+  <div class="section-label reveal">Comment ça marche</div>
+  <h2 class="reveal reveal-delay-1">Trois étapes.<br>Zéro complexité.</h2>
+
+  <div class="steps-grid">
+    <div class="step reveal reveal-delay-2">
+      <div class="step-number">1</div>
+      <h3>Scan</h3>
+      <p>L'IA analyse votre entreprise — produits, marchés, secteur — et identifie chaque régulation applicable parmi des milliers de textes juridiques mondiaux.</p>
+      <div class="step-line"></div>
+    </div>
+    <div class="step reveal reveal-delay-3">
+      <div class="step-number">2</div>
+      <h3>Monitor</h3>
+      <p>Surveillance continue des évolutions réglementaires. Chaque nouveau texte, chaque amende, chaque deadline est détecté et évalué automatiquement.</p>
+      <div class="step-line"></div>
+    </div>
+    <div class="step reveal reveal-delay-4">
+      <div class="step-number">3</div>
+      <h3>Act</h3>
+      <p>Analyse d'impact business personnalisée. Obligations concrètes, deadlines, plans d'action par département. Prêt pour le board.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ PIPELINE ═══ -->
+<section class="section-dark" style="padding-top: 140px; padding-bottom: 140px;">
+  <div class="inner">
+    <div class="section-label reveal">La technologie</div>
+    <h2 class="reveal reveal-delay-1" style="color: var(--white);">Trois modèles d'IA.<br>Une intelligence <em style="font-family: var(--serif); font-style: italic; color: #a78bfa;">chirurgicale</em>.</h2>
+    <p class="subtitle reveal reveal-delay-2">Chaque étape utilise le modèle optimal — de l'analyse profonde au filtrage instantané.</p>
+
+    <div class="pipeline-models">
+      <div class="model-card reveal reveal-delay-2">
+        <div class="model-tag opus">Opus</div>
+        <h3>Analyse profonde</h3>
+        <p>Mapping réglementaire, enrichissement des signaux, analyse d'impact business. Le raisonnement le plus avancé pour les décisions critiques.</p>
+      </div>
+      <div class="model-card reveal reveal-delay-3">
+        <div class="model-tag sonnet">Sonnet</div>
+        <h3>Scoring structuré</h3>
+        <p>Évaluation rapide de pertinence, classification, scoring multi-dimensionnel. 91 000 articles scorés par mois.</p>
+      </div>
+      <div class="model-card reveal reveal-delay-4">
+        <div class="model-tag haiku">Haiku</div>
+        <h3>Filtrage instantané</h3>
+        <p>Pré-filtre de pertinence en millisecondes. Élimine 43% du bruit avant l'analyse, réduisant les coûts de 66%.</p>
+      </div>
+    </div>
+
+    <div class="pipeline-stats">
+      <div class="pipeline-stat reveal reveal-delay-1">
+        <div class="stat-number"><span class="accent" data-count="981">0</span></div>
+        <div class="stat-label">régulations<br>identifiées</div>
+      </div>
+      <div class="pipeline-stat reveal reveal-delay-2">
+        <div class="stat-number"><span data-count="3024">0</span></div>
+        <div class="stat-label">articles<br>analysés</div>
+      </div>
+      <div class="pipeline-stat reveal reveal-delay-3">
+        <div class="stat-number"><span class="accent" data-count="22">0</span></div>
+        <div class="stat-label">signaux<br>actionnables</div>
+      </div>
+      <div class="pipeline-stat reveal reveal-delay-4">
+        <div class="stat-number"><span data-count="17">0</span></div>
+        <div class="stat-label">minutes<br>par scan</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ PRICING ═══ -->
+<section id="pricing" style="padding-top: 140px; padding-bottom: 140px;">
+  <div style="text-align: center;">
+    <div class="section-label reveal">Tarifs</div>
+    <h2 class="reveal reveal-delay-1">Un prix simple.<br>Une valeur immense.</h2>
+
+    <div class="pricing-toggle reveal reveal-delay-2">
+      <span>Mensuel</span>
+      <div class="toggle-switch active" id="billingToggle"></div>
+      <span>Annuel <span style="color: var(--purple); font-weight: 600;">−17%</span></span>
+    </div>
+  </div>
+
+  <div class="pricing-grid reveal reveal-delay-3">
+    <!-- Free -->
+    <div class="pricing-card">
+      <div class="pricing-name">Free</div>
+      <div class="pricing-label">Découvrez vos risques réglementaires</div>
+      <div class="pricing-price">€0</div>
+      <div class="pricing-period">pour toujours</div>
+      <ul class="pricing-features">
+        <li>1 scan diagnostic</li>
+        <li>Top 10 signaux</li>
+        <li>Aperçu des régulations</li>
+        <li>1 utilisateur</li>
+      </ul>
+      <button class="pricing-btn">Commencer</button>
+    </div>
+
+    <!-- Pro -->
+    <div class="pricing-card featured">
+      <div class="pricing-badge">Recommandé</div>
+      <div class="pricing-name">Pro</div>
+      <div class="pricing-label">Pour les PME et ETI qui veulent garder le contrôle</div>
+      <div class="pricing-price" data-monthly="€399" data-annual="€329">€329</div>
+      <div class="pricing-period" data-monthly="/mois" data-annual="/mois, facturé annuellement">/mois, facturé annuellement</div>
+      <ul class="pricing-features">
+        <li>Scans illimités</li>
+        <li>100 régulations monitorées</li>
+        <li>4 refreshes / mois</li>
+        <li>Alertes email</li>
+        <li>3 utilisateurs</li>
+      </ul>
+      <button class="pricing-btn">Démarrer l'essai</button>
+    </div>
+
+    <!-- Business -->
+    <div class="pricing-card">
+      <div class="pricing-name">Business</div>
+      <div class="pricing-label">Pour les équipes compliance qui veulent tout voir</div>
+      <div class="pricing-price" data-monthly="€899" data-annual="€749">€749</div>
+      <div class="pricing-period" data-monthly="/mois" data-annual="/mois, facturé annuellement">/mois, facturé annuellement</div>
+      <ul class="pricing-features">
+        <li>300 régulations monitorées</li>
+        <li>8 refreshes / mois</li>
+        <li>Personas illimités</li>
+        <li>Export PDF & API</li>
+        <li>10 utilisateurs</li>
+      </ul>
+      <button class="pricing-btn">Contacter</button>
+    </div>
+
+    <!-- Enterprise -->
+    <div class="pricing-card">
+      <div class="pricing-name">Enterprise</div>
+      <div class="pricing-label">Pour les grands groupes avec des besoins spécifiques</div>
+      <div class="pricing-price" style="font-size: 2rem;">Sur devis</div>
+      <div class="pricing-period">&nbsp;</div>
+      <ul class="pricing-features">
+        <li>Régulations illimitées</li>
+        <li>Refreshes illimités</li>
+        <li>SSO & audit logs</li>
+        <li>Support dédié & SLA</li>
+        <li>Utilisateurs illimités</li>
+      </ul>
+      <button class="pricing-btn">Nous contacter</button>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ MARKET POSITION ═══ -->
+<section class="section-dark" style="padding-top: 140px; padding-bottom: 140px;">
+  <div class="inner">
+    <div class="section-label reveal">Positionnement</div>
+    <h2 class="reveal reveal-delay-1" style="color: var(--white);">30× moins cher<br>que les alternatives.</h2>
+    <p class="subtitle reveal reveal-delay-2">L'intelligence réglementaire était réservée aux grandes entreprises. Plus maintenant.</p>
+
+    <table class="comparison-table reveal reveal-delay-3">
+      <thead>
+        <tr><th>Solution</th><th>Prix</th><th>Cible</th></tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Regology</td>
+          <td>$1 250 – 1 700 /user/mois</td>
+          <td>Enterprise, finance</td>
+        </tr>
+        <tr>
+          <td>CUBE / Thomson Reuters</td>
+          <td>$50K – 200K+ /an</td>
+          <td>Grandes institutions</td>
+        </tr>
+        <tr>
+          <td>Vanta</td>
+          <td>$20K médiane /an</td>
+          <td>SOC2 / ISO (pas regulatory)</td>
+        </tr>
+        <tr class="highlight-row">
+          <td>Cleo Insight Pro</td>
+          <td>€3 948 /an <span class="savings-badge">30× moins</span></td>
+          <td>PME, ETI, tous secteurs</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
+<!-- ═══ UNIT ECONOMICS ═══ -->
+<section class="section-soft" style="padding-top: 140px; padding-bottom: 140px;">
+  <div class="inner">
+    <div class="section-label reveal">Unit economics</div>
+    <h2 class="reveal reveal-delay-1">Construit pour<br>la rentabilité.</h2>
+
+    <div class="economics-grid">
+      <div class="econ-card reveal reveal-delay-1">
+        <div class="econ-value">$25–150</div>
+        <div class="econ-label">Coût par scan<br>(selon la taille de l'entreprise)</div>
+      </div>
+      <div class="econ-card reveal reveal-delay-2">
+        <div class="econ-value" style="color: var(--purple);">48–58%</div>
+        <div class="econ-label">Marge brute<br>(benchmark AI SaaS : 50–60%)</div>
+      </div>
+      <div class="econ-card reveal reveal-delay-3">
+        <div class="econ-value">€92–146K</div>
+        <div class="econ-label">ARR cible<br>(scénario réaliste–optimiste)</div>
+      </div>
+      <div class="econ-card reveal reveal-delay-4">
+        <div class="econ-value">7</div>
+        <div class="econ-label">Clients payants<br>pour atteindre le break-even</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ CTA ═══ -->
+<section class="cta-section">
+  <h2 class="reveal">Lancez votre<br>diagnostic <em style="font-family: var(--serif); font-style: italic; color: var(--purple);">gratuit</em></h2>
+  <p class="subtitle reveal reveal-delay-1">En 17 minutes, découvrez les régulations qui impactent votre entreprise.<br>Aucune carte bancaire requise.</p>
+  <a href="https://insight.cleolabs.co" class="cta-btn reveal reveal-delay-2">
+    Commencer maintenant
+    <svg width="18" height="18" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 8h10M9 4l4 4-4 4"/></svg>
+  </a>
+</section>
+
+<footer>
+  <p>© 2026 Cleo Insight · Données hébergées en Europe · Conforme RGPD</p>
+</footer>
+
+<script>
+// ─── Intersection Observer for reveal animations ───
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add('visible');
+    }
+  });
+}, { threshold: 0.15, rootMargin: '0px 0px -40px 0px' });
+
+document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+
+// ─── Counter animation ───
+const counterObserver = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting && !entry.target.dataset.counted) {
+      entry.target.dataset.counted = 'true';
+      const target = parseInt(entry.target.dataset.count);
+      const duration = 1800;
+      const start = performance.now();
+
+      function animate(now) {
+        const elapsed = now - start;
+        const progress = Math.min(elapsed / duration, 1);
+        const eased = 1 - Math.pow(1 - progress, 4);
+        const current = Math.floor(eased * target);
+        entry.target.textContent = current.toLocaleString('fr-FR');
+        if (progress < 1) requestAnimationFrame(animate);
+        else entry.target.textContent = target.toLocaleString('fr-FR');
+      }
+      requestAnimationFrame(animate);
+    }
+  });
+}, { threshold: 0.5 });
+
+document.querySelectorAll('[data-count]').forEach(el => counterObserver.observe(el));
+
+// ─── Billing toggle ───
+const toggle = document.getElementById('billingToggle');
+let isAnnual = true;
+
+toggle.addEventListener('click', () => {
+  isAnnual = !isAnnual;
+  toggle.classList.toggle('active', isAnnual);
+
+  document.querySelectorAll('.pricing-price[data-monthly]').forEach(el => {
+    el.textContent = isAnnual ? el.dataset.annual : el.dataset.monthly;
+  });
+  document.querySelectorAll('.pricing-period[data-monthly]').forEach(el => {
+    el.textContent = isAnnual ? el.dataset.annual : el.dataset.monthly;
+  });
+});
+</script>
+
+</body>
+</html>
