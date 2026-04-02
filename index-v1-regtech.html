@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Vigilis — Conformité Produit Propulsée par l'IA</title>
+<title>Cleo Insight — Intelligence Réglementaire</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
 <style>
@@ -35,39 +35,6 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   overflow-x: hidden;
-}
-
-/* ─── Version Nav ─── */
-.version-nav {
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  z-index: 100;
-  display: flex;
-  justify-content: center;
-  gap: 4px;
-  padding: 12px 24px;
-  background: rgba(10,10,10,0.85);
-  backdrop-filter: blur(12px);
-  -webkit-backdrop-filter: blur(12px);
-  border-bottom: 1px solid rgba(255,255,255,0.06);
-}
-.version-nav a {
-  font-size: 0.7rem;
-  font-weight: 600;
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
-  padding: 6px 16px;
-  border-radius: 100px;
-  text-decoration: none;
-  color: var(--gray-400);
-  transition: all 0.3s;
-}
-.version-nav a:hover { color: var(--white); }
-.version-nav a.active {
-  background: var(--purple);
-  color: white;
 }
 
 /* ─── Reveal Animation System ─── */
@@ -286,7 +253,9 @@ h3 {
   margin-top: 72px;
 }
 
-.step { position: relative; }
+.step {
+  position: relative;
+}
 
 .step-number {
   font-family: var(--serif);
@@ -462,8 +431,18 @@ h3 {
   border-radius: 100px;
 }
 
-.pricing-name { font-weight: 600; font-size: 1.15rem; margin-bottom: 8px; }
-.pricing-label { font-size: 0.8rem; color: var(--gray-500); margin-bottom: 32px; line-height: 1.5; }
+.pricing-name {
+  font-weight: 600;
+  font-size: 1.15rem;
+  margin-bottom: 8px;
+}
+
+.pricing-label {
+  font-size: 0.8rem;
+  color: var(--gray-500);
+  margin-bottom: 32px;
+  line-height: 1.5;
+}
 
 .pricing-price {
   font-family: var(--serif);
@@ -473,10 +452,18 @@ h3 {
   margin-bottom: 4px;
 }
 
-.pricing-period { font-size: 0.8rem; color: var(--gray-500); margin-bottom: 32px; }
+.pricing-period {
+  font-size: 0.8rem;
+  color: var(--gray-500);
+  margin-bottom: 32px;
+}
 .pricing-card.featured .pricing-period { color: var(--gray-400); }
 
-.pricing-features { list-style: none; flex: 1; margin-bottom: 32px; }
+.pricing-features {
+  list-style: none;
+  flex: 1;
+  margin-bottom: 32px;
+}
 
 .pricing-features li {
   font-size: 0.85rem;
@@ -520,7 +507,7 @@ h3 {
 .pricing-card.featured .pricing-btn:hover { background: #6d28d9; }
 
 /* ═══════════════════════════════════════ */
-/* TABLES                                  */
+/* MARKET POSITION                         */
 /* ═══════════════════════════════════════ */
 .comparison-table {
   width: 100%;
@@ -557,18 +544,6 @@ h3 {
   border-bottom-color: transparent;
 }
 .comparison-table .highlight-row td:last-child { color: #a78bfa; }
-
-/* Tables on soft/light backgrounds */
-.section-soft .comparison-table th,
-.section-soft .comparison-table td {
-  border-bottom-color: var(--gray-200);
-  color: var(--black);
-}
-.section-soft .comparison-table th { color: var(--gray-500); }
-.section-soft .comparison-table td:last-child { color: var(--gray-600); }
-.section-soft .comparison-table .highlight-row { background: rgba(124,58,237,0.06); }
-.section-soft .comparison-table .highlight-row td { color: var(--black); font-weight: 600; border-bottom-color: transparent; }
-.section-soft .comparison-table .highlight-row td:last-child { color: var(--purple); }
 
 .savings-badge {
   display: inline-block;
@@ -626,7 +601,9 @@ h3 {
   margin-bottom: 24px;
 }
 
-.cta-section .subtitle { margin: 0 auto 48px; }
+.cta-section .subtitle {
+  margin: 0 auto 48px;
+}
 
 .cta-btn {
   display: inline-flex;
@@ -655,6 +632,50 @@ footer {
   border-top: 1px solid var(--gray-100);
 }
 
+/* ─── Version Nav ─── */
+.version-nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+  display: flex;
+  justify-content: center;
+  gap: 4px;
+  padding: 12px 24px;
+  background: rgba(10,10,10,0.85);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-bottom: 1px solid rgba(255,255,255,0.06);
+}
+.version-nav a {
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  padding: 6px 16px;
+  border-radius: 100px;
+  text-decoration: none;
+  color: var(--gray-400);
+  transition: all 0.3s;
+}
+.version-nav a:hover { color: var(--white); }
+.version-nav a.active {
+  background: var(--purple);
+  color: white;
+}
+
+.section-soft .comparison-table th,
+.section-soft .comparison-table td {
+  border-bottom-color: var(--gray-200);
+  color: var(--black);
+}
+.section-soft .comparison-table th { color: var(--gray-500); }
+.section-soft .comparison-table td:last-child { color: var(--gray-600); }
+.section-soft .comparison-table .highlight-row { background: rgba(124,58,237,0.06); }
+.section-soft .comparison-table .highlight-row td { color: var(--black); font-weight: 600; border-bottom-color: transparent; }
+.section-soft .comparison-table .highlight-row td:last-child { color: var(--purple); }
+
 /* ─── Responsive ─── */
 @media (max-width: 900px) {
   section, .section-dark, .section-soft { padding: 80px 24px; }
@@ -676,107 +697,106 @@ footer {
 </head>
 <body>
 
-<!-- ═══ VERSION NAV ═══ -->
 <nav class="version-nav">
-  <a href="/" class="active">Conformite Produit</a>
-  <a href="/index-v1-regtech">RegTech Generaliste</a>
+  <a href="/">Conformite Produit</a>
+  <a href="/index-v1-regtech" class="active">RegTech Generaliste</a>
 </nav>
 
-<!-- ═══ 1. HERO ═══ -->
+<!-- ═══ HERO ═══ -->
 <section class="hero">
-  <div class="hero-wordmark reveal">Vigilis</div>
-  <h1 class="reveal reveal-delay-1">Conformite produit<br>propulsee par l'<em>IA</em></h1>
-  <p class="subtitle reveal reveal-delay-2">GPSR, REACH, DPP, AGEC, EPR — des centaines de regulations qui evoluent chaque semaine.<br>Vigilis scanne vos produits, monitore les changements et vous dit quoi faire.</p>
+  <div class="hero-wordmark reveal">Cleo Insight</div>
+  <h1 class="reveal reveal-delay-1">Intelligence réglementaire<br>propulsée par l'<em>IA</em></h1>
+  <p class="subtitle reveal reveal-delay-2">Découvrez automatiquement les régulations qui impactent votre entreprise.<br>Monitorez les changements. Agissez avant vos concurrents.</p>
   <a href="#pricing" class="hero-cta reveal reveal-delay-3">
-    Scanner mes produits
+    Diagnostic gratuit
     <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 8h10M9 4l4 4-4 4"/></svg>
   </a>
-  <div class="scroll-hint">Defiler &#8595;</div>
+  <div class="scroll-hint">Défiler ↓</div>
 </section>
 
-<!-- ═══ 2. PROBLEM (dark) ═══ -->
+<!-- ═══ PROBLEM ═══ -->
 <section class="section-dark" style="padding-top: 140px; padding-bottom: 140px;">
   <div class="inner">
-    <div class="section-label reveal">Le probleme</div>
-    <h2 class="reveal reveal-delay-1" style="color: var(--white);">La conformite produit<br>est devenue <em style="font-family: var(--serif); font-style: italic; color: var(--gray-400);">ingerable</em></h2>
-    <p class="subtitle reveal reveal-delay-2">GPSR en vigueur depuis decembre 2024. DPP textile obligatoire mi-2027. ESPR qui se deploie categorie par categorie. REACH, RoHS, AGEC, EPR — les fabricants et distributeurs font face a la vague reglementaire la plus intense de l'histoire europeenne. Les tableurs ne suffisent plus.</p>
+    <div class="section-label reveal">Le problème</div>
+    <h2 class="reveal reveal-delay-1" style="color: var(--white);">La conformité réglementaire<br>est devenue <em style="font-family: var(--serif); font-style: italic; color: var(--gray-400);">ingérable</em></h2>
+    <p class="subtitle reveal reveal-delay-2">Les entreprises font face à un tsunami réglementaire. CSRD, NIS2, AI Act, DORA — des centaines de textes qui évoluent chaque semaine. La veille manuelle ne suffit plus.</p>
 
     <div class="stats-grid">
       <div class="stat-card reveal reveal-delay-2">
-        <div class="stat-number" data-count="1000">0</div>
-        <div class="stat-label">changements reglementaires<br>par mois en moyenne (UE)</div>
+        <div class="stat-number" data-count="50000">0</div>
+        <div class="stat-label">entreprises concernées<br>par la CSRD d'ici 2027</div>
       </div>
       <div class="stat-card reveal reveal-delay-3">
-        <div class="stat-number">&euro;11<span style="font-family: var(--sans); font-size: 0.5em;">M</span></div>
-        <div class="stat-label">cout moyen d'un rappel<br>produit en Europe</div>
+        <div class="stat-number">€4.3<span style="font-family: var(--sans); font-size: 0.5em;">Mds</span></div>
+        <div class="stat-label">d'amendes réglementaires<br>dans l'UE en 2025</div>
       </div>
       <div class="stat-card reveal reveal-delay-4">
-        <div class="stat-number" data-count="33">0</div>
-        <div class="stat-label">% du temps compliance passe<br>en veille manuelle (tableurs, emails)</div>
+        <div class="stat-number" data-count="78">0</div>
+        <div class="stat-label">% des ETI n'ont pas<br>d'outil de veille automatisé</div>
       </div>
     </div>
   </div>
 </section>
 
-<!-- ═══ 3. HOW IT WORKS (white) ═══ -->
+<!-- ═══ HOW IT WORKS ═══ -->
 <section style="padding-top: 140px; padding-bottom: 140px;">
-  <div class="section-label reveal">Comment ca marche</div>
-  <h2 class="reveal reveal-delay-1">Trois etapes.<br>Zero complexite.</h2>
+  <div class="section-label reveal">Comment ça marche</div>
+  <h2 class="reveal reveal-delay-1">Trois étapes.<br>Zéro complexité.</h2>
 
   <div class="steps-grid">
     <div class="step reveal reveal-delay-2">
       <div class="step-number">1</div>
       <h3>Scan</h3>
-      <p>L'IA analyse votre catalogue produit — categories, materiaux, marches de distribution — et identifie chaque regulation applicable : GPSR, REACH, RoHS, DPP, EPR, AGEC, CE marking.</p>
+      <p>L'IA analyse votre entreprise — produits, marchés, secteur — et identifie chaque régulation applicable parmi des milliers de textes juridiques mondiaux.</p>
       <div class="step-line"></div>
     </div>
     <div class="step reveal reveal-delay-3">
       <div class="step-number">2</div>
       <h3>Monitor</h3>
-      <p>Surveillance continue des evolutions reglementaires produit. Nouvelle substance SVHC, mise a jour ESPR, deadline DPP — chaque changement est detecte et evalue par produit.</p>
+      <p>Surveillance continue des évolutions réglementaires. Chaque nouveau texte, chaque amende, chaque deadline est détecté et évalué automatiquement.</p>
       <div class="step-line"></div>
     </div>
     <div class="step reveal reveal-delay-4">
       <div class="step-number">3</div>
       <h3>Act</h3>
-      <p>Analyse d'impact par SKU et categorie. Obligations concretes, documentation technique, plans d'action pour les equipes Qualite, Reglementaire et Achats.</p>
+      <p>Analyse d'impact business personnalisée. Obligations concrètes, deadlines, plans d'action par département. Prêt pour le board.</p>
     </div>
   </div>
 </section>
 
-<!-- ═══ 4. TECHNOLOGY (dark) ═══ -->
+<!-- ═══ PIPELINE ═══ -->
 <section class="section-dark" style="padding-top: 140px; padding-bottom: 140px;">
   <div class="inner">
     <div class="section-label reveal">La technologie</div>
-    <h2 class="reveal reveal-delay-1" style="color: var(--white);">Trois modeles d'IA.<br>Une intelligence <em style="font-family: var(--serif); font-style: italic; color: #a78bfa;">chirurgicale</em>.</h2>
-    <p class="subtitle reveal reveal-delay-2">Chaque etape utilise le modele optimal — de l'analyse profonde au filtrage instantane. Adapte aux catalogues de milliers de SKUs.</p>
+    <h2 class="reveal reveal-delay-1" style="color: var(--white);">Trois modèles d'IA.<br>Une intelligence <em style="font-family: var(--serif); font-style: italic; color: #a78bfa;">chirurgicale</em>.</h2>
+    <p class="subtitle reveal reveal-delay-2">Chaque étape utilise le modèle optimal — de l'analyse profonde au filtrage instantané.</p>
 
     <div class="pipeline-models">
       <div class="model-card reveal reveal-delay-2">
         <div class="model-tag opus">Opus</div>
         <h3>Analyse profonde</h3>
-        <p>Mapping reglementaire par categorie produit, enrichissement des signaux, analyse d'impact par SKU. Le raisonnement le plus avance pour GPSR, REACH, DPP.</p>
+        <p>Mapping réglementaire, enrichissement des signaux, analyse d'impact business. Le raisonnement le plus avancé pour les décisions critiques.</p>
       </div>
       <div class="model-card reveal reveal-delay-3">
         <div class="model-tag sonnet">Sonnet</div>
-        <h3>Scoring structure</h3>
-        <p>Evaluation rapide de pertinence, classification par categorie produit, scoring multi-dimensionnel. 91 000 articles scores par mois.</p>
+        <h3>Scoring structuré</h3>
+        <p>Évaluation rapide de pertinence, classification, scoring multi-dimensionnel. 91 000 articles scorés par mois.</p>
       </div>
       <div class="model-card reveal reveal-delay-4">
         <div class="model-tag haiku">Haiku</div>
-        <h3>Filtrage instantane</h3>
-        <p>Pre-filtre de pertinence en millisecondes. Elimine 43% du bruit avant l'analyse, reduisant les couts de 66%.</p>
+        <h3>Filtrage instantané</h3>
+        <p>Pré-filtre de pertinence en millisecondes. Élimine 43% du bruit avant l'analyse, réduisant les coûts de 66%.</p>
       </div>
     </div>
 
     <div class="pipeline-stats">
       <div class="pipeline-stat reveal reveal-delay-1">
         <div class="stat-number"><span class="accent" data-count="981">0</span></div>
-        <div class="stat-label">regulations<br>identifiees</div>
+        <div class="stat-label">régulations<br>identifiées</div>
       </div>
       <div class="pipeline-stat reveal reveal-delay-2">
         <div class="stat-number"><span data-count="3024">0</span></div>
-        <div class="stat-label">articles<br>analyses</div>
+        <div class="stat-label">articles<br>analysés</div>
       </div>
       <div class="pipeline-stat reveal reveal-delay-3">
         <div class="stat-number"><span class="accent" data-count="22">0</span></div>
@@ -790,154 +810,124 @@ footer {
   </div>
 </section>
 
-<!-- ═══ 5. GTM (soft) ═══ -->
+<!-- ═══ GTM (standalone) ═══ -->
 <section class="section-soft" style="padding-top: 140px; padding-bottom: 140px;">
   <div class="inner">
     <div class="section-label reveal">Go-to-Market</div>
     <h2 class="reveal reveal-delay-1">Qui on cible.<br>Comment on vend.</h2>
-
-    <div style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 24px; margin-top: 64px;" class="reveal reveal-delay-2">
+    <div style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 24px;" class="reveal reveal-delay-3">
       <div style="border: 1px solid var(--gray-200); border-radius: 16px; padding: 32px; background: var(--white);">
-        <div style="font-size: 0.7rem; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase; color: var(--gray-400); margin-bottom: 12px;">Modele</div>
-        <div style="font-size: 1.1rem; font-weight: 500;">Regulation-Led Sales</div>
-        <div style="font-size: 0.8rem; color: var(--gray-500); margin-top: 8px;">Free scan produit &rarr; urgence GPSR/DPP &rarr; upgrade Pro. Sales-assist pour Business/Enterprise.</div>
+        <div style="font-size: 0.7rem; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase; color: var(--gray-500); margin-bottom: 12px;">Modèle</div>
+        <div style="font-size: 1.1rem; color: var(--black); font-weight: 500;">Product-Led Sales</div>
+        <div style="font-size: 0.8rem; color: var(--gray-500); margin-top: 8px;">Free scan → upgrade → sales-assist pour Business/Enterprise</div>
       </div>
       <div style="border: 1px solid var(--gray-200); border-radius: 16px; padding: 32px; background: var(--white);">
-        <div style="font-size: 0.7rem; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase; color: var(--gray-400); margin-bottom: 12px;">ICP</div>
-        <div style="font-size: 1.1rem; font-weight: 500;">Fabricants & Distributeurs</div>
-        <div style="font-size: 0.8rem; color: var(--gray-500); margin-top: 8px;">ETI/grands groupes produit (Decathlon, BIC, Electrolux Pro, Longchamp). Champion : Dir. Qualite / Regulatory Affairs</div>
+        <div style="font-size: 0.7rem; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase; color: var(--gray-500); margin-bottom: 12px;">ICP</div>
+        <div style="font-size: 1.1rem; color: var(--black); font-weight: 500;">ETI françaises</div>
+        <div style="font-size: 0.8rem; color: var(--gray-500); margin-top: 8px;">250–5 000 employés, secteurs réglementés. Champion : Dir. Juridique / Conformité</div>
       </div>
       <div style="border: 1px solid var(--gray-200); border-radius: 16px; padding: 32px; background: var(--white);">
-        <div style="font-size: 0.7rem; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase; color: var(--gray-400); margin-bottom: 12px;">Timing reglementaire</div>
-        <div style="font-size: 1.1rem; font-weight: 500;">Vague 2024&ndash;2028</div>
-        <div style="font-size: 0.8rem; color: var(--gray-500); margin-top: 8px;">GPSR (dec 2024) &rarr; DPP textiles (mi-2027) &rarr; ESPR meubles (2028). Chaque deadline = forcing function.</div>
+        <div style="font-size: 0.7rem; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase; color: var(--gray-500); margin-bottom: 12px;">Conversion</div>
+        <div style="font-size: 1.1rem; color: var(--black); font-weight: 500;">20–25% attendu</div>
+        <div style="font-size: 0.8rem; color: var(--gray-500); margin-top: 8px;">Benchmark RegTech : 23.6% trial-to-paid. Onboarding < 5 min = > 25%</div>
       </div>
       <div style="border: 1px solid var(--gray-200); border-radius: 16px; padding: 32px; background: var(--white);">
-        <div style="font-size: 0.7rem; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase; color: var(--gray-400); margin-bottom: 12px;">Acquisition</div>
-        <div style="font-size: 1.1rem; font-weight: 500;">SEO + Industrie</div>
-        <div style="font-size: 0.8rem; color: var(--gray-500); margin-top: 8px;">Content : GPSR, DPP, REACH, ESPR, AGEC. Partenaires : labs de certification, consultants qualite, federations industrielles</div>
-      </div>
-    </div>
-
-    <!-- Target Accounts -->
-    <h3 class="reveal" style="font-size: 0.75rem; font-weight: 600; letter-spacing: 0.15em; text-transform: uppercase; color: var(--gray-500); margin-top: 64px; margin-bottom: 0;">Comptes cibles — Exemples</h3>
-    <table class="comparison-table reveal reveal-delay-1" style="margin-top: 16px;">
-      <thead><tr><th>Entreprise</th><th>Secteur</th><th>Regulations cles</th></tr></thead>
-      <tbody>
-        <tr><td><strong>Decathlon</strong></td><td>Equipement sportif, textile, electronique</td><td>GPSR, REACH, DPP textiles, AGEC, EPR sport, CE</td></tr>
-        <tr><td><strong>BIC</strong></td><td>Papeterie, briquets, rasoirs</td><td>REACH, RoHS, GPSR, CLP, EPR, AGEC</td></tr>
-        <tr><td><strong>Electrolux Professional</strong></td><td>Equipements pros (cuisine, laverie)</td><td>RoHS, REACH, CE, ESPR appareils, WEEE, EPR</td></tr>
-        <tr><td><strong>Longchamp</strong></td><td>Maroquinerie, accessoires de luxe</td><td>REACH textiles, GPSR, DPP textiles, AGEC, EPR</td></tr>
-      </tbody>
-    </table>
-
-    <!-- Buyer Personas -->
-    <h3 class="reveal" style="font-size: 0.75rem; font-weight: 600; letter-spacing: 0.15em; text-transform: uppercase; color: var(--gray-500); margin-top: 64px; margin-bottom: 24px;">Personas acheteurs</h3>
-    <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px;" class="reveal reveal-delay-1">
-      <div style="border: 1px solid var(--gray-200); border-radius: 16px; padding: 32px; background: var(--white);">
-        <div style="font-size: 1.1rem; font-weight: 500; margin-bottom: 8px;">Dir. Qualite</div>
-        <div style="font-size: 0.8rem; color: var(--gray-500); line-height: 1.8;">Champion interne. Gere la documentation technique, les audits, les risk assessments GPSR. Veut un outil qui remplace ses tableurs.</div>
-      </div>
-      <div style="border: 1px solid var(--gray-200); border-radius: 16px; padding: 32px; background: var(--white);">
-        <div style="font-size: 1.1rem; font-weight: 500; margin-bottom: 8px;">Regulatory Affairs Manager</div>
-        <div style="font-size: 0.8rem; color: var(--gray-500); line-height: 1.8;">Passe 1/3 de son temps en veille manuelle. Traque REACH/SVHC, DPP, CLP. Besoin d'alertes automatisees et de rapports par produit.</div>
-      </div>
-      <div style="border: 1px solid var(--gray-200); border-radius: 16px; padding: 32px; background: var(--white);">
-        <div style="font-size: 1.1rem; font-weight: 500; margin-bottom: 8px;">VP Operations / COO</div>
-        <div style="font-size: 0.8rem; color: var(--gray-500); line-height: 1.8;">Decideur budgetaire. Veut reduire le risque de rappel ($11M), accelerer le time-to-market, et prouver la conformite au board.</div>
+        <div style="font-size: 0.7rem; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase; color: var(--gray-500); margin-bottom: 12px;">Acquisition</div>
+        <div style="font-size: 1.1rem; color: var(--black); font-weight: 500;">SEO + Partenariats</div>
+        <div style="font-size: 0.8rem; color: var(--gray-500); margin-top: 8px;">Content : NIS2, CSRD, AI Act. Partenaires : cabinets d'avocats, conseil conformité</div>
       </div>
     </div>
   </div>
 </section>
 
-<!-- ═══ 6. MARKET POSITION (dark) ═══ -->
+<!-- ═══ MARKET POSITION ═══ -->
 <section class="section-dark" style="padding-top: 140px; padding-bottom: 140px;">
   <div class="inner">
     <div class="section-label reveal">Positionnement</div>
-    <h2 class="reveal reveal-delay-1" style="color: var(--white);">Le paysage concurrentiel.<br>Et ou Vigilis <em style="font-family: var(--serif); font-style: italic; color: #a78bfa;">s'insere</em>.</h2>
-    <p class="subtitle reveal reveal-delay-2">$1.4B de marche conformite produit en 2025 (CAGR 11.5%). Les incumbents sont lents, manuels, et chers. La vague GPSR/DPP/ESPR cree un white space massif pour une plateforme AI-native.</p>
+    <h2 class="reveal reveal-delay-1" style="color: var(--white);">Le paysage concurrentiel.<br>Et où Vigilis <em style="font-family: var(--serif); font-style: italic; color: #a78bfa;">s'insère</em>.</h2>
+    <p class="subtitle reveal reveal-delay-2">$24B de marché RegTech en 2026. Tous les acteurs ciblent les grandes institutions financières. Personne ne sert les ETI multi-secteurs.</p>
 
-    <!-- Tier 1 -->
+    <!-- Tier 1: Direct Regulatory Intelligence -->
     <div style="margin-top: 72px;">
-      <div class="reveal" style="font-size: 0.7rem; font-weight: 600; letter-spacing: 0.15em; text-transform: uppercase; color: var(--gray-500); margin-bottom: 24px;">Conformite Produit — Concurrents directs</div>
+      <div class="reveal" style="font-size: 0.7rem; font-weight: 600; letter-spacing: 0.15em; text-transform: uppercase; color: var(--gray-500); margin-bottom: 24px;">Regulatory Intelligence — Concurrents directs</div>
       <table class="comparison-table reveal reveal-delay-1">
-        <thead><tr><th>Acteur</th><th>Prix</th><th>Focus</th><th>Forces / Faiblesses</th></tr></thead>
+        <thead><tr><th>Acteur</th><th>Prix</th><th>Secteurs</th><th>Forces / Faiblesses</th></tr></thead>
         <tbody>
           <tr>
-            <td><strong>Complir</strong><br><span style="font-size: 0.75rem; color: var(--gray-500);">Copenhague &middot; 2025 &middot; &euro;1.7M pre-seed</span></td>
-            <td>Non communique</td>
-            <td>Retailers produits (Flying Tiger, COOP)</td>
-            <td style="font-size: 0.85rem;">AI extraction + labeling + 40 marches. Mais operationnel (docs, etiquettes) — pas d'intelligence reglementaire ni de veille predictive</td>
+            <td><strong>CUBE</strong><br><span style="font-size: 0.75rem; color: var(--gray-500);">Londres · 2011 · Acquis Thomson Reuters RI</span></td>
+            <td>$50K–200K+/an</td>
+            <td>Finance uniquement</td>
+            <td style="font-size: 0.85rem;">Couverture massive. Mais enterprise-only, pas d'IA générative, pas de business impact</td>
           </tr>
           <tr>
-            <td><strong>ProductIP</strong><br><span style="font-size: 0.75rem; color: var(--gray-500);">Pays-Bas &middot; 32 000 pros &middot; 10 000 categories</span></td>
-            <td>Credits (&euro;480/check)</td>
-            <td>PCMS all-around (non-food)</td>
-            <td style="font-size: 0.85rem;">Le plus complet en PCMS. Mais pas d'IA, systeme de credits opaque, pas de veille automatisee</td>
+            <td><strong>Regology</strong><br><span style="font-size: 0.75rem; color: var(--gray-500);">Palo Alto · 2017 · $1.7K/user/mois</span></td>
+            <td>$15K–20K/user/an</td>
+            <td>Multi-secteur (US-centric)</td>
+            <td style="font-size: 0.85rem;">AI Agents + Smart Law Library. Mais prix prohibitif, couverture EU faible</td>
           </tr>
           <tr>
-            <td><strong>C2P (Compliance & Risks)</strong><br><span style="font-size: 0.75rem; color: var(--gray-500);">Irlande &middot; 300+ marques (Dyson, Samsung, Miele)</span></td>
-            <td>Enterprise (sur devis)</td>
-            <td>Reg. intelligence produit (198 pays)</td>
-            <td style="font-size: 0.85rem;">60 000 reglementations, 50+ experts. Mais humain-driven, enterprise-only, pas d'IA</td>
+            <td><strong>Corlytics</strong><br><span style="font-size: 0.75rem; color: var(--gray-500);">Dublin · 2013 · Acquis Clausematch + ING SparQ</span></td>
+            <td>Sur devis (6 chiffres)</td>
+            <td>Finance, assurance</td>
+            <td style="font-size: 0.85rem;">Policy management award 2026. Mais finance-only, pas de PME/ETI</td>
           </tr>
           <tr>
-            <td><strong>Noetic</strong><br><span style="font-size: 0.75rem; color: var(--gray-500);">YC W26 &middot; AI agents &middot; Hardware compliance</span></td>
-            <td>Non communique</td>
-            <td>Hardware (FCC, FDA, CE, UL)</td>
-            <td style="font-size: 0.85rem;">AI agents end-to-end + matching labs. Mais hardware-only, pas de veille continue</td>
+            <td><strong>Ascent (AscentAI)</strong><br><span style="font-size: 0.75rem; color: var(--gray-500);">Chicago · 2015 · Acquis par Edgewater (2026)</span></td>
+            <td>Sur devis (6 chiffres)</td>
+            <td>Finance, mortgage, fintech</td>
+            <td style="font-size: 0.85rem;">Obligation parsing AI best-in-class. Mais US-only, finance-only</td>
           </tr>
           <tr>
-            <td><strong>Enhesa</strong><br><span style="font-size: 0.75rem; color: var(--gray-500);">Bruxelles &middot; 279 juridictions &middot; 160 analystes</span></td>
-            <td>Enterprise (5-6 chiffres)</td>
-            <td>EHS, produit, chimie</td>
-            <td style="font-size: 0.85rem;">Couverture EHS inegalee. Mais 100% humain = lent (semaines), cher, pas d'IA</td>
+            <td><strong>Enhesa</strong><br><span style="font-size: 0.75rem; color: var(--gray-500);">Bruxelles · 279 juridictions · 160 analystes</span></td>
+            <td>Enterprise pricing (5-6 chiffres)</td>
+            <td>EHS, produit, chimie, CSRD</td>
+            <td style="font-size: 0.85rem;">Couverture EHS/produit inégalée. Mais pas d'IA, analystes humains = lent, cher</td>
           </tr>
           <tr>
-            <td><strong>Certivo</strong><br><span style="font-size: 0.75rem; color: var(--gray-500);">AI-driven &middot; REACH, RoHS, PFAS, ESG</span></td>
-            <td>Sur devis</td>
-            <td>Substance compliance</td>
-            <td style="font-size: 0.85rem;">AI assistant + integration PLM/ERP. Mais focus substances, pas de GPSR/DPP/EPR</td>
+            <td><strong>Wolters Kluwer OneSumX</strong><br><span style="font-size: 0.75rem; color: var(--gray-500);">NL · Incumbent · +8-10%/an d'augmentation</span></td>
+            <td>$100K–500K+/an</td>
+            <td>Banques, assurance</td>
+            <td style="font-size: 0.85rem;">Predictive analytics + obligation clustering. Mais lock-in, prix prohibitif, lent</td>
           </tr>
           <tr>
-            <td><strong>ComplyMarket</strong><br><span style="font-size: 0.75rem; color: var(--gray-500);">CE, UKCA, GPSR &middot; Onboarding meme jour</span></td>
-            <td>Abonnement flat</td>
-            <td>CE marking, GPSR</td>
-            <td style="font-size: 0.85rem;">AI-assisted reports. Mais limite au marquage CE/UKCA, pas de veille ni monitoring</td>
+            <td><strong>Obsidian RI</strong><br><span style="font-size: 0.75rem; color: var(--gray-500);">Nouveau · API-first · MCP servers</span></td>
+            <td>Per-user (prix transparent)</td>
+            <td>Chimie, ESG, Life Sciences</td>
+            <td style="font-size: 0.85rem;">Real-time gov sources, API + MCP. Mais pas de business impact, pas d'analyse AI</td>
           </tr>
         </tbody>
       </table>
     </div>
 
-    <!-- Tier 2 -->
+    <!-- Tier 2: GRC / Compliance Automation (adjacent) -->
     <div style="margin-top: 64px;">
-      <div class="reveal" style="font-size: 0.7rem; font-weight: 600; letter-spacing: 0.15em; text-transform: uppercase; color: var(--gray-500); margin-bottom: 24px;">Supply Chain & Enterprise — Adjacents</div>
+      <div class="reveal" style="font-size: 0.7rem; font-weight: 600; letter-spacing: 0.15em; text-transform: uppercase; color: var(--gray-500); margin-bottom: 24px;">GRC / Compliance Automation — Adjacents</div>
       <table class="comparison-table reveal reveal-delay-1">
         <thead><tr><th>Acteur</th><th>Prix</th><th>Focus</th><th>Overlap avec Vigilis</th></tr></thead>
         <tbody>
           <tr>
-            <td><strong>Assent</strong><br><span style="font-size: 0.75rem; color: var(--gray-500);">Ottawa &middot; REACH, PFAS, SCIP</span></td>
-            <td>Enterprise (sur devis)</td>
-            <td>Electronique, auto, defense</td>
-            <td style="font-size: 0.85rem;">Moyen — substance compliance supply chain, pas de veille globale</td>
+            <td><strong>Vanta</strong><br><span style="font-size: 0.75rem; color: var(--gray-500);">$220M ARR · Agentic Trust Platform (mars 2026)</span></td>
+            <td>$10K–80K/an</td>
+            <td>SOC2, ISO 27001, HIPAA</td>
+            <td style="font-size: 0.85rem;">Faible — audit/certification, pas regulatory intelligence</td>
           </tr>
           <tr>
-            <td><strong>iPoint-systems</strong><br><span style="font-size: 0.75rem; color: var(--gray-500);">Allemagne &middot; PLM/ERP &middot; REACH, RoHS</span></td>
-            <td>&euro;450&ndash;900/mois</td>
-            <td>Auto, electronique, machinery</td>
-            <td style="font-size: 0.85rem;">Moyen — BOM compliance, mais pas d'IA, pas de veille, limite substances</td>
+            <td><strong>Drata</strong><br><span style="font-size: 0.75rem; color: var(--gray-500);">Agentic Trust Management · AI agents autonomes</span></td>
+            <td>$15K–100K+/an</td>
+            <td>SOC2, ISO, CMMC</td>
+            <td style="font-size: 0.85rem;">Faible — même segment que Vanta, pas de veille réglementaire</td>
           </tr>
           <tr>
-            <td><strong>Source Intelligence</strong><br><span style="font-size: 0.75rem; color: var(--gray-500);">Enterprise SaaS &middot; REACH, TSCA, EPR</span></td>
-            <td>Enterprise (sur devis)</td>
-            <td>Mid-market a large manufacturers</td>
-            <td style="font-size: 0.85rem;">Moyen — EPR + substance, mais pas d'IA, pas de GPSR/DPP</td>
+            <td><strong>Dastra</strong><br><span style="font-size: 0.75rem; color: var(--gray-500);">France · €4.3M levés (2025) · 5K clients</span></td>
+            <td>€49–499/mois</td>
+            <td>RGPD, AI Act</td>
+            <td style="font-size: 0.85rem;">Moyen — même marché FR mais single-regulation (RGPD). Complémentaire.</td>
           </tr>
           <tr>
-            <td><strong>Signify (getsignify)</strong><br><span style="font-size: 0.75rem; color: var(--gray-500);">AI Agents &middot; 2 000+ frameworks</span></td>
-            <td>Essai gratuit 7j</td>
-            <td>Food, cosmetiques</td>
-            <td style="font-size: 0.85rem;">Faible — focus alimentaire/cosmetique, pas de consumer goods</td>
+            <td><strong>6clicks</strong></td>
+            <td>$1 500–3 000/mois</td>
+            <td>GRC multi-framework</td>
+            <td style="font-size: 0.85rem;">Moyen — AI GRC mais pas de regulatory intelligence ni business impact</td>
           </tr>
         </tbody>
       </table>
@@ -948,22 +938,22 @@ footer {
       <div style="display: grid; grid-template-columns: 1fr 2fr; gap: 48px; align-items: center;">
         <div>
           <div style="font-family: var(--serif); font-size: 3rem; color: var(--white); line-height: 1.1;">Vigilis</div>
-          <div style="font-size: 0.85rem; color: #a78bfa; margin-top: 8px;">&euro;3 948/an (Pro)</div>
+          <div style="font-size: 0.85rem; color: #a78bfa; margin-top: 8px;">€3 948/an (Pro)</div>
         </div>
         <div>
           <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px;">
             <div>
-              <div style="font-size: 0.7rem; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase; color: var(--gray-500); margin-bottom: 8px;">vs Incumbents</div>
-              <div style="font-size: 1.5rem; font-weight: 500; color: var(--white);">10&ndash;30&times; moins cher</div>
-              <div style="font-size: 0.8rem; color: var(--gray-400);">que C2P, Enhesa, Assent</div>
+              <div style="font-size: 0.7rem; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase; color: var(--gray-500); margin-bottom: 8px;">vs Enterprise RI</div>
+              <div style="font-size: 1.5rem; font-weight: 500; color: var(--white);">30× moins cher</div>
+              <div style="font-size: 0.8rem; color: var(--gray-400);">que Regology, CUBE, Enhesa</div>
             </div>
             <div>
               <div style="font-size: 0.7rem; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase; color: var(--gray-500); margin-bottom: 8px;">Ce qu'ils n'ont pas</div>
-              <div style="font-size: 0.85rem; color: var(--gray-400); line-height: 1.8;">Veille predictive AI<br>Impact par SKU & categorie<br>Multi-regulation (GPSR+DPP+REACH+EPR)<br>Onboarding en 17 min</div>
+              <div style="font-size: 0.85rem; color: var(--gray-400); line-height: 1.8;">Business impact analysis<br>Personas par département<br>Action cards actionnables<br>Multi-secteur sans surcoût</div>
             </div>
             <div>
               <div style="font-size: 0.7rem; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase; color: var(--gray-500); margin-bottom: 8px;">Notre moat</div>
-              <div style="font-size: 0.85rem; color: var(--gray-400); line-height: 1.8;">Pipeline 3 modeles AI (Opus/Sonnet/Haiku)<br>Intelligence + operationnel (vs Complir = ops only)<br>Prefilter Haiku (-66% couts)<br>17 min scan vs semaines chez Enhesa/C2P</div>
+              <div style="font-size: 0.85rem; color: var(--gray-400); line-height: 1.8;">Pipeline 3 modèles AI (Opus/Sonnet/Haiku)<br>Cache scoring cross-org<br>Prefilter Haiku (-66% coûts)<br>17 min scan vs semaines chez Enhesa</div>
             </div>
           </div>
         </div>
@@ -972,7 +962,7 @@ footer {
   </div>
 </section>
 
-<!-- ═══ 7. PRICING (white) ═══ -->
+<!-- ═══ PRICING ═══ -->
 <section id="pricing" style="padding-top: 140px; padding-bottom: 140px;">
   <div style="text-align: center;">
     <div class="section-label reveal">Tarifs</div>
@@ -981,93 +971,97 @@ footer {
     <div class="pricing-toggle reveal reveal-delay-2">
       <span>Mensuel</span>
       <div class="toggle-switch active" id="billingToggle"></div>
-      <span>Annuel <span style="color: var(--purple); font-weight: 600;">&minus;17%</span></span>
+      <span>Annuel <span style="color: var(--purple); font-weight: 600;">−17%</span></span>
     </div>
   </div>
 
   <div class="pricing-grid reveal reveal-delay-3">
+    <!-- Free -->
     <div class="pricing-card">
       <div class="pricing-name">Free</div>
-      <div class="pricing-label">Decouvrez vos risques produit</div>
-      <div class="pricing-price">&euro;0</div>
+      <div class="pricing-label">Découvrez vos risques réglementaires</div>
+      <div class="pricing-price">€0</div>
       <div class="pricing-period">pour toujours</div>
       <ul class="pricing-features">
         <li>1 scan diagnostic</li>
         <li>Top 10 signaux</li>
-        <li>Apercu des regulations</li>
+        <li>Aperçu des régulations</li>
         <li>1 utilisateur</li>
       </ul>
       <button class="pricing-btn">Commencer</button>
     </div>
 
+    <!-- Pro -->
     <div class="pricing-card featured">
-      <div class="pricing-badge">Recommande</div>
+      <div class="pricing-badge">Recommandé</div>
       <div class="pricing-name">Pro</div>
-      <div class="pricing-label">Pour les fabricants et distributeurs qui veulent garder le controle</div>
-      <div class="pricing-price" data-monthly="&euro;399" data-annual="&euro;329">&euro;329</div>
-      <div class="pricing-period" data-monthly="/mois" data-annual="/mois, facture annuellement">/mois, facture annuellement</div>
+      <div class="pricing-label">Pour les PME et ETI qui veulent garder le contrôle</div>
+      <div class="pricing-price" data-monthly="€399" data-annual="€329">€329</div>
+      <div class="pricing-period" data-monthly="/mois" data-annual="/mois, facturé annuellement">/mois, facturé annuellement</div>
       <ul class="pricing-features">
-        <li>Scans illimites</li>
-        <li>100 regulations produit monitorees</li>
+        <li>Scans illimités</li>
+        <li>100 régulations monitorées</li>
         <li>4 refreshes / mois</li>
         <li>Alertes email</li>
         <li>3 utilisateurs</li>
       </ul>
-      <button class="pricing-btn">Demarrer l'essai</button>
+      <button class="pricing-btn">Démarrer l'essai</button>
     </div>
 
+    <!-- Business -->
     <div class="pricing-card">
       <div class="pricing-name">Business</div>
-      <div class="pricing-label">Pour les equipes Qualite & Reglementaire</div>
-      <div class="pricing-price" data-monthly="&euro;899" data-annual="&euro;749">&euro;749</div>
-      <div class="pricing-period" data-monthly="/mois" data-annual="/mois, facture annuellement">/mois, facture annuellement</div>
+      <div class="pricing-label">Pour les équipes compliance qui veulent tout voir</div>
+      <div class="pricing-price" data-monthly="€899" data-annual="€749">€749</div>
+      <div class="pricing-period" data-monthly="/mois" data-annual="/mois, facturé annuellement">/mois, facturé annuellement</div>
       <ul class="pricing-features">
-        <li>300 regulations produit monitorees</li>
+        <li>300 régulations monitorées</li>
         <li>8 refreshes / mois</li>
-        <li>Personas illimites</li>
+        <li>Personas illimités</li>
         <li>Export PDF & API</li>
         <li>10 utilisateurs</li>
       </ul>
       <button class="pricing-btn">Contacter</button>
     </div>
 
+    <!-- Enterprise -->
     <div class="pricing-card">
       <div class="pricing-name">Enterprise</div>
-      <div class="pricing-label">Pour les grands groupes avec des besoins specifiques</div>
+      <div class="pricing-label">Pour les grands groupes avec des besoins spécifiques</div>
       <div class="pricing-price" style="font-size: 2rem;">Sur devis</div>
       <div class="pricing-period">&nbsp;</div>
       <ul class="pricing-features">
-        <li>Regulations illimitees</li>
-        <li>Refreshes illimites</li>
+        <li>Régulations illimitées</li>
+        <li>Refreshes illimités</li>
         <li>SSO & audit logs</li>
-        <li>Support dedie & SLA</li>
-        <li>Utilisateurs illimites</li>
+        <li>Support dédié & SLA</li>
+        <li>Utilisateurs illimités</li>
       </ul>
       <button class="pricing-btn">Nous contacter</button>
     </div>
   </div>
 </section>
 
-<!-- ═══ 8. UNIT ECONOMICS (soft) ═══ -->
+<!-- ═══ UNIT ECONOMICS ═══ -->
 <section class="section-soft" style="padding-top: 140px; padding-bottom: 140px;">
   <div class="inner">
     <div class="section-label reveal">Unit economics</div>
-    <h2 class="reveal reveal-delay-1">Construit pour<br>la rentabilite.</h2>
+    <h2 class="reveal reveal-delay-1">Construit pour<br>la rentabilité.</h2>
 
     <div class="economics-grid">
-      <div class="econ-card reveal reveal-delay-1" style="background: var(--white);">
-        <div class="econ-value">$25&ndash;150</div>
-        <div class="econ-label">Cout par scan<br>(selon la taille de l'entreprise)</div>
+      <div class="econ-card reveal reveal-delay-1">
+        <div class="econ-value">$25–150</div>
+        <div class="econ-label">Coût par scan<br>(selon la taille de l'entreprise)</div>
       </div>
-      <div class="econ-card reveal reveal-delay-2" style="background: var(--white);">
-        <div class="econ-value" style="color: var(--purple);">48&ndash;58%</div>
-        <div class="econ-label">Marge brute<br>(benchmark AI SaaS : 50&ndash;60%)</div>
+      <div class="econ-card reveal reveal-delay-2">
+        <div class="econ-value" style="color: var(--purple);">48–58%</div>
+        <div class="econ-label">Marge brute<br>(benchmark AI SaaS : 50–60%)</div>
       </div>
-      <div class="econ-card reveal reveal-delay-3" style="background: var(--white);">
-        <div class="econ-value">&euro;92&ndash;146K</div>
-        <div class="econ-label">ARR cible<br>(scenario realiste&ndash;optimiste)</div>
+      <div class="econ-card reveal reveal-delay-3">
+        <div class="econ-value">€92–146K</div>
+        <div class="econ-label">ARR cible<br>(scénario réaliste–optimiste)</div>
       </div>
-      <div class="econ-card reveal reveal-delay-4" style="background: var(--white);">
+      <div class="econ-card reveal reveal-delay-4">
         <div class="econ-value">7</div>
         <div class="econ-label">Clients payants<br>pour atteindre le break-even</div>
       </div>
@@ -1075,13 +1069,15 @@ footer {
   </div>
 </section>
 
-<!-- ═══ 9. ROADMAP Q2 (white) ═══ -->
+<!-- ═══ ROADMAP Q2 ═══ -->
 <section style="padding-top: 140px; padding-bottom: 140px;">
   <div class="section-label reveal">Roadmap Q2 2026</div>
-  <h2 class="reveal reveal-delay-1">Trois features.<br>Un seul objectif : <em style="font-family: var(--serif); font-style: italic;">l'indispensabilite</em>.</h2>
-  <p class="subtitle reveal reveal-delay-2">DPP textile obligatoire mi-2027. ESPR qui se deploie par categorie. Le timing est parfait pour construire la plateforme de reference en conformite produit AI-native.</p>
+  <h2 class="reveal reveal-delay-1">Trois features.<br>Un seul objectif : <em style="font-family: var(--serif); font-style: italic;">l'indispensabilité</em>.</h2>
+  <p class="subtitle reveal reveal-delay-2">Le marché compliance bascule vers l'agentic. Vanta et Drata ont lancé leurs AI Agents en mars 2026. Vigilis doit suivre — mais avec un angle unique : l'intelligence prédictive.</p>
 
   <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 1px; background: var(--gray-200); border-radius: 20px; overflow: hidden; margin-top: 72px;">
+
+    <!-- Agent -->
     <div style="background: var(--black); color: var(--white); padding: 48px 36px;" class="reveal reveal-delay-2">
       <div style="display: flex; justify-content: space-between; align-items: start; margin-bottom: 32px;">
         <div style="font-size: 0.65rem; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase; padding: 5px 12px; background: var(--purple); color: white; border-radius: 100px;">Avril</div>
@@ -1089,37 +1085,39 @@ footer {
       </div>
       <h3 style="color: var(--white); font-size: 1.5rem; font-weight: 500; margin-bottom: 16px;">Vigilis Agent</h3>
       <p style="color: var(--gray-400); font-size: 0.9rem; line-height: 1.7; margin-bottom: 24px;">
-        Un agent conversationnel dans l'app. Le Dir. Qualite demande <em style="color: var(--gray-200);">"quels produits sont impactes par la mise a jour REACH SVHC ?"</em> — reponse immediate avec SKUs concernes et sources.
+        Un agent conversationnel dans l'app. Le Dir. Juridique demande <em style="color: var(--gray-200);">"quelles sont mes obligations CSRD pour Q3 ?"</em> — réponse immédiate avec sources et liens.
       </p>
       <div style="border-top: 1px solid rgba(255,255,255,0.08); padding-top: 20px;">
         <div style="font-size: 0.75rem; color: var(--gray-500); line-height: 2;">
-          &rarr; RAG sur donnees org (Sonnet)<br>
-          &rarr; ~$0.01-0.05 par question<br>
-          &rarr; Le feature qui rend le produit sticky
+          → RAG sur données org (Sonnet)<br>
+          → ~$0.01-0.05 par question<br>
+          → Le feature qui rend le produit sticky
         </div>
       </div>
-      <div style="margin-top: 24px; font-size: 0.7rem; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase; color: var(--gray-500);">Impact : Retention &times; Conversion</div>
+      <div style="margin-top: 24px; font-size: 0.7rem; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase; color: var(--gray-500);">Impact : Retention × Conversion</div>
     </div>
 
+    <!-- API -->
     <div style="background: var(--white); padding: 48px 36px;" class="reveal reveal-delay-3">
       <div style="display: flex; justify-content: space-between; align-items: start; margin-bottom: 32px;">
         <div style="font-size: 0.65rem; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase; padding: 5px 12px; background: var(--gray-100); color: var(--gray-600); border-radius: 100px;">Mai</div>
         <div style="font-family: var(--serif); font-size: 4rem; font-style: italic; color: var(--gray-100); line-height: 1;">2</div>
       </div>
-      <h3 style="font-size: 1.5rem; font-weight: 500; margin-bottom: 16px;">API + Integrations PLM/ERP</h3>
+      <h3 style="font-size: 1.5rem; font-weight: 500; margin-bottom: 16px;">API + Webhooks</h3>
       <p style="color: var(--gray-600); font-size: 0.9rem; line-height: 1.7; margin-bottom: 24px;">
-        REST API pour lire signaux, regulations, obligations par produit. Webhooks temps reel. Connecteurs PLM, ERP, PIM + Slack, Jira.
+        REST API pour lire signaux, régulations, obligations. Webhooks en temps réel. Intégrations Slack, Jira, email digest.
       </p>
       <div style="border-top: 1px solid var(--gray-100); padding-top: 20px;">
         <div style="font-size: 0.75rem; color: var(--gray-500); line-height: 2;">
-          &rarr; S'integre dans SAP, Oracle, Akeneo, Centric PLM<br>
-          &rarr; Gate pour les deals Enterprise<br>
-          &rarr; Pas de migration necessaire
+          → S'intègre dans la stack existante (ServiceNow, OneTrust)<br>
+          → Gate pour les deals Enterprise<br>
+          → Pas de migration nécessaire
         </div>
       </div>
       <div style="margin-top: 24px; font-size: 0.7rem; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase; color: var(--gray-500);">Impact : ACV Enterprise</div>
     </div>
 
+    <!-- Predictive -->
     <div style="background: var(--white); padding: 48px 36px;" class="reveal reveal-delay-4">
       <div style="display: flex; justify-content: space-between; align-items: start; margin-bottom: 32px;">
         <div style="font-size: 0.65rem; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase; padding: 5px 12px; background: var(--gray-100); color: var(--gray-600); border-radius: 100px;">Juin</div>
@@ -1127,57 +1125,57 @@ footer {
       </div>
       <h3 style="font-size: 1.5rem; font-weight: 500; margin-bottom: 16px;">Predictive Signals</h3>
       <p style="color: var(--gray-600); font-size: 0.9rem; line-height: 1.7; margin-bottom: 24px;">
-        Scoring predictif par regulation : probabilite d'adoption, timeline, impact produit projete. <em style="color: var(--black);">"ESPR meubles en preparation — 85% de chances, 340 SKUs concernes, deadline estimee Q1 2028."</em>
+        Scoring prédictif par régulation : probabilité d'adoption, timeline, impact projeté. <em style="color: var(--black);">"NIS3 en préparation — 70% de chances, 12 produits concernés."</em>
       </p>
       <div style="border-top: 1px solid var(--gray-100); padding-top: 20px;">
         <div style="font-size: 0.75rem; color: var(--gray-500); line-height: 2;">
-          &rarr; Historique legislatif + enforcement patterns<br>
-          &rarr; Personne ne fait du vrai predictif en RegTech<br>
-          &rarr; Transforme la veille en strategie
+          → Historique législatif + enforcement patterns<br>
+          → Personne ne fait du vrai prédictif en RegTech<br>
+          → Transforme la veille en stratégie
         </div>
       </div>
-      <div style="margin-top: 24px; font-size: 0.7rem; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase; color: var(--gray-500);">Impact : Moat defensif</div>
+      <div style="margin-top: 24px; font-size: 0.7rem; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase; color: var(--gray-500);">Impact : Moat défensif</div>
     </div>
   </div>
 
-  <!-- Regulatory context -->
+  <!-- Market context -->
   <div style="margin-top: 64px; padding: 40px; border: 1px solid var(--gray-100); border-radius: 16px;" class="reveal reveal-delay-3">
-    <div style="font-size: 0.7rem; font-weight: 600; letter-spacing: 0.15em; text-transform: uppercase; color: var(--gray-400); margin-bottom: 16px;">Contexte reglementaire — Vague 2024&ndash;2028</div>
+    <div style="font-size: 0.7rem; font-weight: 600; letter-spacing: 0.15em; text-transform: uppercase; color: var(--gray-400); margin-bottom: 16px;">Contexte concurrentiel — Mars/Avril 2026</div>
     <div style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 32px;">
       <div>
-        <div style="font-weight: 600; font-size: 0.9rem; margin-bottom: 4px;">GPSR</div>
-        <div style="font-size: 0.8rem; color: var(--gray-500); line-height: 1.6;">En vigueur depuis dec 2024. Risk assessment obligatoire pour TOUS les produits non-food EU.</div>
+        <div style="font-weight: 600; font-size: 0.9rem; margin-bottom: 4px;">Vanta</div>
+        <div style="font-size: 0.8rem; color: var(--gray-500); line-height: 1.6;">Lance "Agentic Trust Platform" + AI Agents = "24/7 GRC engineers"</div>
       </div>
       <div>
-        <div style="font-weight: 600; font-size: 0.9rem; margin-bottom: 4px;">DPP Textiles</div>
-        <div style="font-size: 0.8rem; color: var(--gray-500); line-height: 1.6;">Obligatoire mi-2027. QR code + donnees machine-readable. Impact Decathlon, Longchamp.</div>
+        <div style="font-weight: 600; font-size: 0.9rem; margin-bottom: 4px;">Drata</div>
+        <div style="font-size: 0.8rem; color: var(--gray-500); line-height: 1.6;">Se rebrand "Agentic Trust Management" + agents autonomes pour vendor assessment</div>
       </div>
       <div>
-        <div style="font-weight: 600; font-size: 0.9rem; margin-bottom: 4px;">ESPR</div>
-        <div style="font-size: 0.8rem; color: var(--gray-500); line-height: 1.6;">Working plan 2025-2030 : appareils (2026), textiles (2027), meubles (2028). Chaque categorie = nouveau marche.</div>
+        <div style="font-weight: 600; font-size: 0.9rem; margin-bottom: 4px;">Regology</div>
+        <div style="font-size: 0.8rem; color: var(--gray-500); line-height: 1.6;">AI Agents pour regulatory change tracking + compliance automation</div>
       </div>
       <div>
-        <div style="font-weight: 600; font-size: 0.9rem; margin-bottom: 4px;">AGEC + EPR</div>
-        <div style="font-size: 0.8rem; color: var(--gray-500); line-height: 1.6;">France en avance : indice durabilite, destruction invendus interdite, reporting digital.</div>
+        <div style="font-weight: 600; font-size: 0.9rem; margin-bottom: 4px;">CUBE</div>
+        <div style="font-size: 0.8rem; color: var(--gray-500); line-height: 1.6;">Acquiert 4CRisk pour risk mapping automation + next-gen compliance</div>
       </div>
     </div>
   </div>
 </section>
 
-<!-- ═══ 10. DATA ROOM (dark) ═══ -->
+<!-- ═══ DATA ROOM ═══ -->
 <section class="section-dark" style="padding-top: 140px; padding-bottom: 140px;">
   <div class="inner">
     <div class="section-label reveal">Data Room</div>
-    <h2 class="reveal reveal-delay-1" style="color: var(--white);">Les chiffres<br>derriere le produit.</h2>
+    <h2 class="reveal reveal-delay-1" style="color: var(--white);">Les chiffres<br>derrière le produit.</h2>
 
     <!-- Cost Structure -->
-    <h3 class="reveal reveal-delay-2" style="color: var(--gray-400); font-size: 0.75rem; letter-spacing: 0.15em; text-transform: uppercase; margin-top: 72px; margin-bottom: 24px;">Structure de couts — Pipeline AI</h3>
+    <h3 class="reveal reveal-delay-2" style="color: var(--gray-400); font-size: 0.75rem; letter-spacing: 0.15em; text-transform: uppercase; margin-top: 72px; margin-bottom: 24px;">Structure de coûts — Pipeline AI</h3>
     <table class="comparison-table reveal reveal-delay-2" style="margin-top: 0;">
-      <thead><tr><th>Step</th><th>Modele</th><th>Cout (Decathlon, 981 regs)</th></tr></thead>
+      <thead><tr><th>Step</th><th>Modèle</th><th>Coût (Decathlon, 981 regs)</th></tr></thead>
       <tbody>
         <tr><td>Step 1 — Regulation Mapping</td><td>Opus ($5/$25 MTok)</td><td>$24.35 (24 chunks)</td></tr>
-        <tr><td>Step 2b — Prefilter</td><td>Haiku ($0.80/$4 MTok)</td><td>$3.62 (2 246 articles filtres)</td></tr>
-        <tr><td>Step 2b — Scoring</td><td>Sonnet ($3/$15 MTok)</td><td>~$88 (1 472 articles scores)</td></tr>
+        <tr><td>Step 2b — Prefilter</td><td>Haiku ($0.80/$4 MTok)</td><td>$3.62 (2 246 articles filtrés)</td></tr>
+        <tr><td>Step 2b — Scoring</td><td>Sonnet ($3/$15 MTok)</td><td>~$88 (1 472 articles scorés)</td></tr>
         <tr><td>Step 2c — Enrichment</td><td>Opus</td><td>$5.91 (102 articles)</td></tr>
         <tr><td>Step 3 — Impact Analysis</td><td>Opus</td><td>$28.21 (150 articles)</td></tr>
         <tr><td>Exa Searches</td><td>Exa API</td><td>$3.65</td></tr>
@@ -1186,9 +1184,9 @@ footer {
     </table>
 
     <!-- Cost per company size -->
-    <h3 class="reveal reveal-delay-2" style="color: var(--gray-400); font-size: 0.75rem; letter-spacing: 0.15em; text-transform: uppercase; margin-top: 64px; margin-bottom: 24px;">Cout par taille d'entreprise</h3>
+    <h3 class="reveal reveal-delay-2" style="color: var(--gray-400); font-size: 0.75rem; letter-spacing: 0.15em; text-transform: uppercase; margin-top: 64px; margin-bottom: 24px;">Coût par taille d'entreprise</h3>
     <table class="comparison-table reveal reveal-delay-2" style="margin-top: 0;">
-      <thead><tr><th>Taille</th><th>Regulations</th><th>Cout scan</th></tr></thead>
+      <thead><tr><th>Taille</th><th>Régulations</th><th>Coût scan</th></tr></thead>
       <tbody>
         <tr><td>PME (petite)</td><td>~50</td><td>~$25</td></tr>
         <tr><td>PME (moyenne)</td><td>~150</td><td>~$55</td></tr>
@@ -1199,22 +1197,22 @@ footer {
     </table>
 
     <!-- Optimizations -->
-    <h3 class="reveal reveal-delay-2" style="color: var(--gray-400); font-size: 0.75rem; letter-spacing: 0.15em; text-transform: uppercase; margin-top: 64px; margin-bottom: 24px;">Optimisations appliquees (Avril 2026)</h3>
+    <h3 class="reveal reveal-delay-2" style="color: var(--gray-400); font-size: 0.75rem; letter-spacing: 0.15em; text-transform: uppercase; margin-top: 64px; margin-bottom: 24px;">Optimisations appliquées (Avril 2026)</h3>
     <table class="comparison-table reveal reveal-delay-2" style="margin-top: 0;">
-      <thead><tr><th>Optimisation</th><th>Impact</th><th>Detail</th></tr></thead>
+      <thead><tr><th>Optimisation</th><th>Impact</th><th>Détail</th></tr></thead>
       <tbody>
-        <tr><td>Scoring Opus &rarr; Sonnet</td><td>-42% sur step2b</td><td>91K calls/mois, classification structuree</td></tr>
-        <tr><td>Traductions &rarr; Haiku 4.5</td><td>-73%</td><td>1 000 concurrent, 4&times; plus rapide</td></tr>
-        <tr><td>Pre-filtre Haiku</td><td>-47% sur step2b</td><td>Elimine 43% du bruit avant Sonnet</td></tr>
-        <tr><td>Scoring cache (content_hash)</td><td>-30% re-scans</td><td>245K articles hashes, cross-run reuse</td></tr>
+        <tr><td>Scoring Opus → Sonnet</td><td>-42% sur step2b</td><td>91K calls/mois, classification structurée</td></tr>
+        <tr><td>Traductions → Haiku 4.5</td><td>-73%</td><td>1 000 concurrent, 4× plus rapide</td></tr>
+        <tr><td>Pré-filtre Haiku</td><td>-47% sur step2b</td><td>Élimine 43% du bruit avant Sonnet</td></tr>
+        <tr><td>Scoring cache (content_hash)</td><td>-30% re-scans</td><td>245K articles hashés, cross-run reuse</td></tr>
         <tr><td>Pricing model-aware</td><td>Tracking fiable</td><td>Opus $5/$25, Sonnet $3/$15, Haiku $0.80/$4</td></tr>
-        <tr><td>Discovery routes &rarr; Sonnet</td><td>-40%</td><td>Enrichissement produit/pays/autorite/regulation</td></tr>
-        <tr class="highlight-row"><td>Total</td><td>-78% vs Mars</td><td>$554 &rarr; $124 par scan Decathlon</td></tr>
+        <tr><td>Discovery routes → Sonnet</td><td>-40%</td><td>Enrichissement produit/pays/autorité/régulation</td></tr>
+        <tr class="highlight-row"><td>Total</td><td>-78% vs Mars</td><td>$554 → $124 par scan Decathlon</td></tr>
       </tbody>
     </table>
 
     <!-- AWS Bill -->
-    <h3 class="reveal reveal-delay-2" style="color: var(--gray-400); font-size: 0.75rem; letter-spacing: 0.15em; text-transform: uppercase; margin-top: 64px; margin-bottom: 24px;">Facture AWS projetee</h3>
+    <h3 class="reveal reveal-delay-2" style="color: var(--gray-400); font-size: 0.75rem; letter-spacing: 0.15em; text-transform: uppercase; margin-top: 64px; margin-bottom: 24px;">Facture AWS projetée</h3>
     <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px;" class="reveal reveal-delay-3">
       <div style="border: 1px solid rgba(255,255,255,0.08); border-radius: 16px; padding: 32px; text-align: center;">
         <div style="font-family: var(--serif); font-size: 2.5rem; color: var(--gray-400); text-decoration: line-through;">$41 628</div>
@@ -1222,40 +1220,40 @@ footer {
       </div>
       <div style="border: 1px solid rgba(124,58,237,0.3); border-radius: 16px; padding: 32px; text-align: center; background: rgba(124,58,237,0.05);">
         <div style="font-family: var(--serif); font-size: 2.5rem; color: var(--white);">~$8 700</div>
-        <div style="font-size: 0.8rem; color: #a78bfa; margin-top: 8px;">Avril 2026 (projete)</div>
+        <div style="font-size: 0.8rem; color: #a78bfa; margin-top: 8px;">Avril 2026 (projeté)</div>
       </div>
       <div style="border: 1px solid rgba(255,255,255,0.08); border-radius: 16px; padding: 32px; text-align: center;">
         <div style="font-family: var(--serif); font-size: 2.5rem; color: #6ee7b7;">-79%</div>
-        <div style="font-size: 0.8rem; color: var(--gray-500); margin-top: 8px;">Reduction annuelle ~$166K</div>
+        <div style="font-size: 0.8rem; color: var(--gray-500); margin-top: 8px;">Réduction annuelle ~$166K</div>
       </div>
     </div>
 
     <!-- Market Data -->
-    <h3 class="reveal reveal-delay-2" style="color: var(--gray-400); font-size: 0.75rem; letter-spacing: 0.15em; text-transform: uppercase; margin-top: 64px; margin-bottom: 24px;">Donnees marche (sources web, avril 2026)</h3>
+    <h3 class="reveal reveal-delay-2" style="color: var(--gray-400); font-size: 0.75rem; letter-spacing: 0.15em; text-transform: uppercase; margin-top: 64px; margin-bottom: 24px;">Données marché (sources web, avril 2026)</h3>
     <table class="comparison-table reveal reveal-delay-2" style="margin-top: 0;">
-      <thead><tr><th>Metrique</th><th>Valeur</th><th>Source</th></tr></thead>
+      <thead><tr><th>Métrique</th><th>Valeur</th><th>Source</th></tr></thead>
       <tbody>
-        <tr><td>Marche conformite produit</td><td>$1.36B (2025) &rarr; $3.2B (2033)</td><td>IndustryResearch.biz / ArchiveMarketResearch</td></tr>
-        <tr><td>CAGR</td><td>11.5%</td><td>ArchiveMarketResearch</td></tr>
-        <tr><td>Marche compliance software (large)</td><td>$68.93B (2026)</td><td>Mordor Intelligence</td></tr>
-        <tr><td>Complir (concurrent direct)</td><td>&euro;1.7M pre-seed, valo &euro;6.8M (dec 2025)</td><td>TechFundingNews, ArcticStartup</td></tr>
-        <tr><td>ProductIP</td><td>32 000 professionnels, 10 000 categories</td><td>productip.com</td></tr>
-        <tr><td>C2P (Compliance & Risks)</td><td>300+ marques (Dyson, Samsung, Miele)</td><td>complianceandrisks.com</td></tr>
-        <tr><td>Cout conformite / employe (PME)</td><td>$50 100/an</td><td>NAM</td></tr>
-        <tr><td>Cout moyen rappel produit</td><td>$11M</td><td>Compliance & Risks</td></tr>
-        <tr><td>Produits echouant RoHS (surveillance UE)</td><td>~50%</td><td>EU Market Surveillance Reports</td></tr>
-        <tr><td>AI SaaS gross margin</td><td>50&ndash;60%</td><td>Bessemer Venture Partners</td></tr>
+        <tr><td>Marché RegTech mondial</td><td>$19.6B (2025) → $82.8B (2032)</td><td>Grand View Research</td></tr>
+        <tr><td>CAGR</td><td>22.8%</td><td>Mordor Intelligence</td></tr>
+        <tr><td>Regology pricing</td><td>$1 250–1 700/user/mois</td><td>Regology.com, Capterra</td></tr>
+        <tr><td>Vanta médiane</td><td>$20 000/an (320 deals vérifiés)</td><td>CostBench, Vendr</td></tr>
+        <tr><td>Drata pricing</td><td>$35K–45K/an</td><td>Spendflo</td></tr>
+        <tr><td>6clicks pricing</td><td>$1 500–3 000/mois</td><td>6clicks.com</td></tr>
+        <tr><td>Dastra (FR, RGPD)</td><td>5 000 clients, €4.3M levés (2025)</td><td>Usine Digitale</td></tr>
+        <tr><td>RegTech trial-to-paid</td><td>23.6%</td><td>SaaS Hero 2026</td></tr>
+        <tr><td>AI SaaS gross margin</td><td>50–60%</td><td>Bessemer Venture Partners</td></tr>
+        <tr><td>Outcome-based adoption</td><td>~30% des SaaS (2025)</td><td>Bain & Company</td></tr>
       </tbody>
     </table>
 
     <!-- Revenue Projections -->
     <h3 class="reveal reveal-delay-2" style="color: var(--gray-400); font-size: 0.75rem; letter-spacing: 0.15em; text-transform: uppercase; margin-top: 64px; margin-bottom: 24px;">Projections de revenus</h3>
     <table class="comparison-table reveal reveal-delay-2" style="margin-top: 0;">
-      <thead><tr><th>Scenario</th><th>Clients</th><th>MRR &rarr; ARR</th></tr></thead>
+      <thead><tr><th>Scénario</th><th>Clients</th><th>MRR → ARR</th></tr></thead>
       <tbody>
-        <tr><td>Conservateur</td><td>5 Pro + 2 Business</td><td>&euro;3 793 &rarr; &euro;45 516</td></tr>
-        <tr class="highlight-row"><td>Realiste</td><td>8 Pro + 3 Business + 1 Enterprise</td><td>&euro;7 689 &rarr; &euro;92 268</td></tr>
-        <tr><td>Optimiste</td><td>12 Pro + 5 Business + 2 Enterprise</td><td>&euro;12 183 &rarr; &euro;146 196</td></tr>
+        <tr><td>Conservateur</td><td>5 Pro + 2 Business</td><td>€3 793 → €45 516</td></tr>
+        <tr class="highlight-row"><td>Réaliste</td><td>8 Pro + 3 Business + 1 Enterprise</td><td>€7 689 → €92 268</td></tr>
+        <tr><td>Optimiste</td><td>12 Pro + 5 Business + 2 Enterprise</td><td>€12 183 → €146 196</td></tr>
       </tbody>
     </table>
 
@@ -1265,30 +1263,32 @@ footer {
       <div style="border: 1px solid rgba(255,255,255,0.08); border-radius: 16px; padding: 32px;">
         <div style="font-size: 0.8rem; color: var(--gray-400); margin-bottom: 16px;">Frontend + API</div>
         <div style="font-size: 0.9rem; color: var(--white); line-height: 2;">
-          Next.js 16 (App Router) &middot; React 19 &middot; TypeScript 5.9<br>
-          Tailwind CSS 3 &middot; shadcn/ui &middot; Framer Motion 12<br>
-          next-intl v4 (FR/EN) &middot; SWR &middot; Vercel
+          Next.js 16 (App Router) · React 19 · TypeScript 5.9<br>
+          Tailwind CSS 3 · shadcn/ui · Framer Motion 12<br>
+          next-intl v4 (FR/EN) · SWR · Vercel
         </div>
       </div>
       <div style="border: 1px solid rgba(255,255,255,0.08); border-radius: 16px; padding: 32px;">
         <div style="font-size: 0.8rem; color: var(--gray-400); margin-bottom: 16px;">Worker + AI + Data</div>
         <div style="font-size: 0.9rem; color: var(--white); line-height: 2;">
-          Express worker (Railway) &middot; Claude Opus/Sonnet/Haiku via Bedrock<br>
-          Exa Search API &middot; Supabase (Postgres + Auth + RLS)<br>
-          Stripe (billing) &middot; Resend (email) &middot; Bottleneck (rate limiting)
+          Express worker (Railway) · Claude Opus/Sonnet/Haiku via Bedrock<br>
+          Exa Search API · Supabase (Postgres + Auth + RLS)<br>
+          Stripe (billing) · Resend (email) · Bottleneck (rate limiting)
         </div>
       </div>
     </div>
   </div>
 </section>
 
-<!-- ═══ 11. BRAND GUIDELINES (soft) ═══ -->
+<!-- ═══ BRAND GUIDELINES ═══ -->
 <section class="section-soft" style="padding-top: 140px; padding-bottom: 140px;">
   <div class="inner">
     <div class="section-label reveal">Brand Guidelines</div>
-    <h2 class="reveal reveal-delay-1">Identite visuelle</h2>
+    <h2 class="reveal reveal-delay-1">Identité visuelle</h2>
 
     <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 64px; margin-top: 72px;">
+
+      <!-- Colors -->
       <div class="reveal reveal-delay-2">
         <h3 style="margin-bottom: 24px;">Couleurs</h3>
         <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px;">
@@ -1326,42 +1326,55 @@ footer {
 
         <h3 style="margin-top: 48px; margin-bottom: 24px;">Usage des couleurs</h3>
         <ul style="font-size: 0.85rem; color: var(--gray-600); line-height: 2; list-style: none;">
-          <li>&rarr; Purple : CTA, badges, accents (usage <strong>tres</strong> parcimonieux)</li>
-          <li>&rarr; Black : titres, texte principal, boutons secondaires</li>
-          <li>&rarr; Gray 500-600 : sous-titres, descriptions</li>
-          <li>&rarr; White / Gray 50 : backgrounds (alterner)</li>
-          <li>&rarr; Jamais de gradient purple-to-blue (cliche AI)</li>
+          <li>→ Purple : CTA, badges, accents (usage <strong>très</strong> parcimonieux)</li>
+          <li>→ Black : titres, texte principal, boutons secondaires</li>
+          <li>→ Gray 500-600 : sous-titres, descriptions</li>
+          <li>→ White / Gray 50 : backgrounds (alterner)</li>
+          <li>→ Jamais de gradient purple-to-blue (cliché AI)</li>
         </ul>
       </div>
 
+      <!-- Typography -->
       <div class="reveal reveal-delay-3">
         <h3 style="margin-bottom: 24px;">Typographie</h3>
+
         <div style="margin-bottom: 32px;">
           <div style="font-size: 0.7rem; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase; color: var(--gray-400); margin-bottom: 8px;">Display / Titres</div>
           <div style="font-family: 'Instrument Serif', serif; font-size: 3rem; line-height: 1.1; letter-spacing: -0.02em;">Instrument Serif</div>
-          <div style="font-size: 0.8rem; color: var(--gray-500); margin-top: 4px;">Regular + Italic &middot; Google Fonts</div>
+          <div style="font-size: 0.8rem; color: var(--gray-500); margin-top: 4px;">Regular + Italic · Google Fonts</div>
         </div>
+
         <div style="margin-bottom: 32px;">
           <div style="font-size: 0.7rem; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase; color: var(--gray-400); margin-bottom: 8px;">Body / UI</div>
           <div style="font-family: 'DM Sans', sans-serif; font-size: 2rem; font-weight: 400; line-height: 1.2;">DM Sans</div>
-          <div style="font-size: 0.8rem; color: var(--gray-500); margin-top: 4px;">100&ndash;1000 weight &middot; Google Fonts</div>
+          <div style="font-size: 0.8rem; color: var(--gray-500); margin-top: 4px;">100–1000 weight · Google Fonts</div>
+        </div>
+
+        <div style="margin-bottom: 32px;">
+          <div style="font-size: 0.7rem; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase; color: var(--gray-400); margin-bottom: 12px;">Échelle typographique</div>
+          <div style="font-family: var(--serif); font-size: 4rem; line-height: 1; letter-spacing: -0.03em;">Display — 4rem</div>
+          <div style="font-family: var(--serif); font-size: 2.5rem; line-height: 1.1; letter-spacing: -0.02em; margin-top: 8px;">H2 — 2.5–4rem (clamp)</div>
+          <div style="font-family: var(--sans); font-size: 1.35rem; font-weight: 600; margin-top: 8px;">H3 — 1.35rem / 600</div>
+          <div style="font-family: var(--sans); font-size: 1.1rem; color: var(--gray-600); margin-top: 8px;">Subtitle — 1–1.25rem / gray-600</div>
+          <div style="font-family: var(--sans); font-size: 0.95rem; color: var(--gray-600); margin-top: 8px;">Body — 0.95rem / gray-600</div>
+          <div style="font-family: var(--sans); font-size: 0.75rem; font-weight: 600; letter-spacing: 0.15em; text-transform: uppercase; color: var(--gray-500); margin-top: 8px;">LABEL — 0.75rem / 600 / UPPERCASE / 0.15em</div>
         </div>
 
         <h3 style="margin-top: 48px; margin-bottom: 24px;">Principes de design</h3>
         <ul style="font-size: 0.85rem; color: var(--gray-600); line-height: 2; list-style: none;">
-          <li>&rarr; Inspiration Jony Ive : reduction a l'essence</li>
-          <li>&rarr; L'italique serif = l'accent unique par section</li>
-          <li>&rarr; White space genereux (120px+ entre sections)</li>
-          <li>&rarr; Animations : reveal lent (0.9s), cubic-bezier</li>
-          <li>&rarr; Border-radius : 12-20px (cartes), 100px (pills/CTA)</li>
-          <li>&rarr; Pas d'ombres agressives, bordures 1px subtiles</li>
+          <li>→ Inspiration Jony Ive : réduction à l'essence</li>
+          <li>→ L'italique serif = l'accent unique par section</li>
+          <li>→ White space généreux (120px+ entre sections)</li>
+          <li>→ Animations : reveal lent (0.9s), cubic-bezier</li>
+          <li>→ Border-radius : 12-20px (cartes), 100px (pills/CTA)</li>
+          <li>→ Pas d'ombres agressives, bordures 1px subtiles</li>
         </ul>
       </div>
     </div>
   </div>
 </section>
 
-<!-- ═══ 12. NAMING (dark) ═══ -->
+<!-- ═══ NAMING ═══ -->
 <section class="section-dark" style="padding-top: 180px; padding-bottom: 180px;">
   <div class="inner" style="text-align: center;">
     <div class="section-label reveal">Naming</div>
@@ -1380,19 +1393,19 @@ footer {
       <div class="reveal reveal-delay-2">
         <div style="font-size: 0.7rem; font-weight: 600; letter-spacing: 0.15em; text-transform: uppercase; color: var(--gray-500); margin-bottom: 16px;">Pourquoi</div>
         <p style="font-size: 0.95rem; color: var(--gray-400); line-height: 1.8;">
-          7 lettres. 3 syllabes. Racine latine = credibilite juridique instantanee. Se prononce et se comprend identiquement en francais et en anglais.
+          7 lettres. 3 syllabes. Racine latine = crédibilité juridique instantanée. Se prononce et se comprend identiquement en français et en anglais. Aucun concurrent RegTech avec ce nom.
         </p>
       </div>
       <div class="reveal reveal-delay-3">
-        <div style="font-size: 0.7rem; font-weight: 600; letter-spacing: 0.15em; text-transform: uppercase; color: var(--gray-500); margin-bottom: 16px;">Ce que ca evoque</div>
+        <div style="font-size: 0.7rem; font-weight: 600; letter-spacing: 0.15em; text-transform: uppercase; color: var(--gray-500); margin-bottom: 16px;">Ce que ça évoque</div>
         <p style="font-size: 0.95rem; color: var(--gray-400); line-height: 1.8;">
-          Vigilance. Veille. Protection. Le gardien de la Rome antique qui surveillait les menaces la nuit. Exactement ce que fait le produit.
+          Vigilance. Veille. Protection. Le gardien de la Rome antique qui surveillait les menaces la nuit. Exactement ce que fait le produit — surveiller les changements réglementaires 24/7.
         </p>
       </div>
       <div class="reveal reveal-delay-4">
-        <div style="font-size: 0.7rem; font-weight: 600; letter-spacing: 0.15em; text-transform: uppercase; color: var(--gray-500); margin-bottom: 16px;">Tonalite</div>
+        <div style="font-size: 0.7rem; font-weight: 600; letter-spacing: 0.15em; text-transform: uppercase; color: var(--gray-500); margin-bottom: 16px;">Tonalité</div>
         <p style="font-size: 0.95rem; color: var(--gray-400); line-height: 1.8;">
-          Serieux. Autoritaire. Le genre de nom qu'un Dir. Qualite de Decathlon ou BIC met dans son budget sans hesiter.
+          Sérieux. Autoritaire. Pas playful, pas startup. Le genre de nom qu'un Dir. Juridique d'ETI met dans son budget sans hésiter. Fonctionne pour la France, l'Europe, et l'international.
         </p>
       </div>
     </div>
@@ -1400,7 +1413,7 @@ footer {
     <div style="margin-top: 80px; display: grid; grid-template-columns: repeat(2, 1fr); gap: 24px; max-width: 700px; margin-left: auto; margin-right: auto;">
       <div class="reveal reveal-delay-3" style="border: 1px solid rgba(255,255,255,0.08); border-radius: 16px; padding: 32px; text-align: center;">
         <div style="font-family: var(--sans); font-size: 1.4rem; font-weight: 300; letter-spacing: 0.2em; color: var(--white); text-transform: uppercase;">Vigilis</div>
-        <div style="font-size: 0.75rem; color: var(--gray-500); margin-top: 8px;">Wordmark — clean, espace</div>
+        <div style="font-size: 0.75rem; color: var(--gray-500); margin-top: 8px;">Wordmark — clean, espacé</div>
       </div>
       <div class="reveal reveal-delay-4" style="border: 1px solid rgba(255,255,255,0.08); border-radius: 16px; padding: 32px; text-align: center;">
         <div style="font-family: var(--serif); font-size: 1.6rem; font-style: italic; color: var(--white);">Vigilis</div>
@@ -1410,16 +1423,16 @@ footer {
 
     <div class="reveal reveal-delay-5" style="margin-top: 64px;">
       <div style="font-size: 0.85rem; color: var(--gray-500); line-height: 2;">
-        <span style="color: var(--gray-400);">vigilis.io</span> &middot; <span style="color: var(--gray-400);">vigilis.ai</span> &middot; <span style="color: var(--gray-400);">vigilis.eu</span>
+        <span style="color: var(--gray-400);">vigilis.io</span> · <span style="color: var(--gray-400);">vigilis.ai</span> · <span style="color: var(--gray-400);">vigilis.eu</span>
       </div>
     </div>
   </div>
 </section>
 
-<!-- ═══ 13. CTA (white) ═══ -->
+<!-- ═══ CTA ═══ -->
 <section class="cta-section">
-  <h2 class="reveal">Scannez vos produits.<br><em style="font-family: var(--serif); font-style: italic; color: var(--purple);">Gratuitement</em>.</h2>
-  <p class="subtitle reveal reveal-delay-1">En 17 minutes, decouvrez chaque regulation qui impacte votre catalogue produit.<br>GPSR, REACH, DPP, AGEC, EPR — tout en un scan. Aucune carte bancaire requise.</p>
+  <h2 class="reveal">Lancez votre<br>diagnostic <em style="font-family: var(--serif); font-style: italic; color: var(--purple);">gratuit</em></h2>
+  <p class="subtitle reveal reveal-delay-1">En 17 minutes, découvrez les régulations qui impactent votre entreprise.<br>Aucune carte bancaire requise.</p>
   <a href="https://insight.cleolabs.co" class="cta-btn reveal reveal-delay-2">
     Commencer maintenant
     <svg width="18" height="18" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 8h10M9 4l4 4-4 4"/></svg>
@@ -1427,11 +1440,11 @@ footer {
 </section>
 
 <footer>
-  <p>&copy; 2026 Vigilis &middot; Donnees hebergees en Europe &middot; Conforme RGPD</p>
+  <p>© 2026 Vigilis · Données hébergées en Europe · Conforme RGPD</p>
 </footer>
 
 <script>
-// Intersection Observer for reveal animations
+// ─── Intersection Observer for reveal animations ───
 const observer = new IntersectionObserver((entries) => {
   entries.forEach(entry => {
     if (entry.isIntersecting) {
@@ -1442,7 +1455,7 @@ const observer = new IntersectionObserver((entries) => {
 
 document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
 
-// Counter animation
+// ─── Counter animation ───
 const counterObserver = new IntersectionObserver((entries) => {
   entries.forEach(entry => {
     if (entry.isIntersecting && !entry.target.dataset.counted) {
@@ -1467,7 +1480,7 @@ const counterObserver = new IntersectionObserver((entries) => {
 
 document.querySelectorAll('[data-count]').forEach(el => counterObserver.observe(el));
 
-// Billing toggle
+// ─── Billing toggle ───
 const toggle = document.getElementById('billingToggle');
 let isAnnual = true;
 
