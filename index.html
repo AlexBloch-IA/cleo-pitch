@@ -1075,73 +1075,228 @@ footer {
   </div>
 </section>
 
-<!-- ═══ 9. ROADMAP Q2 (white) ═══ -->
+<!-- ═══ 9. ROADMAP Q2 DETAILED (white) ═══ -->
 <section style="padding-top: 140px; padding-bottom: 140px;">
   <div class="section-label reveal">Roadmap Q2 2026</div>
-  <h2 class="reveal reveal-delay-1">Trois features.<br>Un seul objectif : <em style="font-family: var(--serif); font-style: italic;">l'indispensabilite</em>.</h2>
-  <p class="subtitle reveal reveal-delay-2">DPP textile obligatoire mi-2027. ESPR qui se deploie par categorie. Le timing est parfait pour construire la plateforme de reference en conformite produit AI-native.</p>
+  <h2 class="reveal reveal-delay-1">7 features en 90 jours.<br>Un seul objectif : <em style="font-family: var(--serif); font-style: italic;">l'indispensabilite</em>.</h2>
+  <p class="subtitle reveal reveal-delay-2">Chaque feature repond a un gap concurrentiel identifie. DPP textile mi-2027, ESPR par categorie, GPSR en vigueur — le timing est parfait pour construire la plateforme de reference.</p>
 
-  <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 1px; background: var(--gray-200); border-radius: 20px; overflow: hidden; margin-top: 72px;">
-    <div style="background: var(--black); color: var(--white); padding: 48px 36px;" class="reveal reveal-delay-2">
-      <div style="display: flex; justify-content: space-between; align-items: start; margin-bottom: 32px;">
-        <div style="font-size: 0.65rem; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase; padding: 5px 12px; background: var(--purple); color: white; border-radius: 100px;">Avril</div>
-        <div style="font-family: var(--serif); font-size: 4rem; font-style: italic; color: rgba(255,255,255,0.06); line-height: 1;">1</div>
-      </div>
-      <h3 style="color: var(--white); font-size: 1.5rem; font-weight: 500; margin-bottom: 16px;">Vigilis Agent</h3>
-      <p style="color: var(--gray-400); font-size: 0.9rem; line-height: 1.7; margin-bottom: 24px;">
-        Un agent conversationnel dans l'app. Le Dir. Qualite demande <em style="color: var(--gray-200);">"quels produits sont impactes par la mise a jour REACH SVHC ?"</em> — reponse immediate avec SKUs concernes et sources.
-      </p>
-      <div style="border-top: 1px solid rgba(255,255,255,0.08); padding-top: 20px;">
-        <div style="font-size: 0.75rem; color: var(--gray-500); line-height: 2;">
-          &rarr; RAG sur donnees org (Sonnet)<br>
-          &rarr; ~$0.01-0.05 par question<br>
-          &rarr; Le feature qui rend le produit sticky
-        </div>
-      </div>
-      <div style="margin-top: 24px; font-size: 0.7rem; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase; color: var(--gray-500);">Impact : Retention &times; Conversion</div>
+  <!-- ── AVRIL ── -->
+  <div style="margin-top: 72px;" class="reveal reveal-delay-2">
+    <div style="display: flex; align-items: center; gap: 16px; margin-bottom: 32px;">
+      <div style="font-size: 0.65rem; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase; padding: 6px 16px; background: var(--purple); color: white; border-radius: 100px;">Avril</div>
+      <div style="height: 1px; flex: 1; background: var(--gray-200);"></div>
+      <div style="font-size: 0.7rem; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase; color: var(--gray-400);">Intelligence & Conversation</div>
     </div>
-
-    <div style="background: var(--white); padding: 48px 36px;" class="reveal reveal-delay-3">
-      <div style="display: flex; justify-content: space-between; align-items: start; margin-bottom: 32px;">
-        <div style="font-size: 0.65rem; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase; padding: 5px 12px; background: var(--gray-100); color: var(--gray-600); border-radius: 100px;">Mai</div>
-        <div style="font-family: var(--serif); font-size: 4rem; font-style: italic; color: var(--gray-100); line-height: 1;">2</div>
-      </div>
-      <h3 style="font-size: 1.5rem; font-weight: 500; margin-bottom: 16px;">API + Integrations PLM/ERP</h3>
-      <p style="color: var(--gray-600); font-size: 0.9rem; line-height: 1.7; margin-bottom: 24px;">
-        REST API pour lire signaux, regulations, obligations par produit. Webhooks temps reel. Connecteurs PLM, ERP, PIM + Slack, Jira.
-      </p>
-      <div style="border-top: 1px solid var(--gray-100); padding-top: 20px;">
-        <div style="font-size: 0.75rem; color: var(--gray-500); line-height: 2;">
-          &rarr; S'integre dans SAP, Oracle, Akeneo, Centric PLM<br>
-          &rarr; Gate pour les deals Enterprise<br>
-          &rarr; Pas de migration necessaire
+    <div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 1px; background: var(--gray-200); border-radius: 20px; overflow: hidden;">
+      <div style="background: var(--black); color: var(--white); padding: 44px 36px;">
+        <div style="display: flex; justify-content: space-between; align-items: start; margin-bottom: 24px;">
+          <div style="font-size: 0.6rem; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase; padding: 4px 10px; background: rgba(124,58,237,0.15); color: #a78bfa; border-radius: 100px;">Semaines 1-3</div>
+          <div style="font-family: var(--serif); font-size: 3rem; font-style: italic; color: rgba(255,255,255,0.06); line-height: 1;">1</div>
         </div>
+        <h3 style="color: var(--white); font-size: 1.35rem; font-weight: 500; margin-bottom: 12px;">Vigilis Agent</h3>
+        <p style="color: var(--gray-400); font-size: 0.85rem; line-height: 1.7; margin-bottom: 20px;">
+          Chat IA conversationnel sur les donnees de conformite du client. <em style="color: var(--gray-200);">"Quels produits sont impactes par la mise a jour REACH SVHC ?"</em> — reponse immediate avec sources et obligations.
+        </p>
+        <div style="border-top: 1px solid rgba(255,255,255,0.08); padding-top: 16px;">
+          <div style="font-size: 0.72rem; color: var(--gray-500); line-height: 2;">
+            &rarr; RAG sur donnees org (Claude Sonnet)<br>
+            &rarr; Historique des signaux, regulations, obligations<br>
+            &rarr; ~$0.01-0.05 par question<br>
+            &rarr; <strong style="color: var(--gray-300);">Le feature qui rend le produit sticky</strong>
+          </div>
+        </div>
+        <div style="margin-top: 20px; font-size: 0.65rem; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase; color: var(--gray-500);">Impact : Retention &times; Conversion</div>
       </div>
-      <div style="margin-top: 24px; font-size: 0.7rem; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase; color: var(--gray-500);">Impact : ACV Enterprise</div>
+
+      <div style="background: var(--white); padding: 44px 36px;">
+        <div style="display: flex; justify-content: space-between; align-items: start; margin-bottom: 24px;">
+          <div style="font-size: 0.6rem; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase; padding: 4px 10px; background: var(--gray-100); color: var(--gray-600); border-radius: 100px;">Semaines 2-4</div>
+          <div style="font-family: var(--serif); font-size: 3rem; font-style: italic; color: var(--gray-100); line-height: 1;">2</div>
+        </div>
+        <h3 style="font-size: 1.35rem; font-weight: 500; margin-bottom: 12px;">Document Intelligence</h3>
+        <p style="color: var(--gray-600); font-size: 0.85rem; line-height: 1.7; margin-bottom: 20px;">
+          Upload et analyse automatique de documents internes : rapports de tests (SGS, Bureau Veritas), certificats, fiches produit. L'IA extrait exigences, non-conformites et gaps.
+        </p>
+        <div style="border-top: 1px solid var(--gray-100); padding-top: 16px;">
+          <div style="font-size: 0.72rem; color: var(--gray-500); line-height: 2;">
+            &rarr; PDF, Excel, Word — extraction structuree<br>
+            &rarr; Croisement auto avec regulations applicables<br>
+            &rarr; <strong style="color: var(--gray-800);">Remplace des heures de lecture manuelle</strong>
+          </div>
+        </div>
+        <div style="margin-top: 20px; font-size: 0.65rem; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase; color: var(--gray-500);">Impact : Valeur percue immediate</div>
+      </div>
     </div>
+  </div>
 
-    <div style="background: var(--white); padding: 48px 36px;" class="reveal reveal-delay-4">
-      <div style="display: flex; justify-content: space-between; align-items: start; margin-bottom: 32px;">
-        <div style="font-size: 0.65rem; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase; padding: 5px 12px; background: var(--gray-100); color: var(--gray-600); border-radius: 100px;">Juin</div>
-        <div style="font-family: var(--serif); font-size: 4rem; font-style: italic; color: var(--gray-100); line-height: 1;">3</div>
-      </div>
-      <h3 style="font-size: 1.5rem; font-weight: 500; margin-bottom: 16px;">Predictive Signals</h3>
-      <p style="color: var(--gray-600); font-size: 0.9rem; line-height: 1.7; margin-bottom: 24px;">
-        Scoring predictif par regulation : probabilite d'adoption, timeline, impact produit projete. <em style="color: var(--black);">"ESPR meubles en preparation — 85% de chances, 340 SKUs concernes, deadline estimee Q1 2028."</em>
-      </p>
-      <div style="border-top: 1px solid var(--gray-100); padding-top: 20px;">
-        <div style="font-size: 0.75rem; color: var(--gray-500); line-height: 2;">
-          &rarr; Historique legislatif + enforcement patterns<br>
-          &rarr; Personne ne fait du vrai predictif en RegTech<br>
-          &rarr; Transforme la veille en strategie
+  <!-- ── MAI ── -->
+  <div style="margin-top: 48px;" class="reveal reveal-delay-3">
+    <div style="display: flex; align-items: center; gap: 16px; margin-bottom: 32px;">
+      <div style="font-size: 0.65rem; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase; padding: 6px 16px; background: var(--gray-800); color: white; border-radius: 100px;">Mai</div>
+      <div style="height: 1px; flex: 1; background: var(--gray-200);"></div>
+      <div style="font-size: 0.7rem; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase; color: var(--gray-400);">Connectivite & Collaboration</div>
+    </div>
+    <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 1px; background: var(--gray-200); border-radius: 20px; overflow: hidden;">
+      <div style="background: var(--white); padding: 44px 36px;">
+        <div style="display: flex; justify-content: space-between; align-items: start; margin-bottom: 24px;">
+          <div style="font-size: 0.6rem; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase; padding: 4px 10px; background: var(--gray-100); color: var(--gray-600); border-radius: 100px;">Semaines 5-7</div>
+          <div style="font-family: var(--serif); font-size: 3rem; font-style: italic; color: var(--gray-100); line-height: 1;">3</div>
         </div>
+        <h3 style="font-size: 1.35rem; font-weight: 500; margin-bottom: 12px;">API + Integrations</h3>
+        <p style="color: var(--gray-600); font-size: 0.85rem; line-height: 1.7; margin-bottom: 20px;">
+          REST API publique : signaux, regulations, obligations par produit. Webhooks temps reel. Connecteurs PLM, ERP, PIM natifs.
+        </p>
+        <div style="border-top: 1px solid var(--gray-100); padding-top: 16px;">
+          <div style="font-size: 0.72rem; color: var(--gray-500); line-height: 2;">
+            &rarr; SAP, Oracle, Akeneo, Centric PLM<br>
+            &rarr; Slack, Jira, Teams<br>
+            &rarr; <strong style="color: var(--gray-800);">Gate pour l'Enterprise</strong>
+          </div>
+        </div>
+        <div style="margin-top: 20px; font-size: 0.65rem; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase; color: var(--gray-500);">Impact : ACV Enterprise</div>
       </div>
-      <div style="margin-top: 24px; font-size: 0.7rem; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase; color: var(--gray-500);">Impact : Moat defensif</div>
+
+      <div style="background: var(--white); padding: 44px 36px;">
+        <div style="display: flex; justify-content: space-between; align-items: start; margin-bottom: 24px;">
+          <div style="font-size: 0.6rem; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase; padding: 4px 10px; background: var(--gray-100); color: var(--gray-600); border-radius: 100px;">Semaines 6-8</div>
+          <div style="font-family: var(--serif); font-size: 3rem; font-style: italic; color: var(--gray-100); line-height: 1;">4</div>
+        </div>
+        <h3 style="font-size: 1.35rem; font-weight: 500; margin-bottom: 12px;">Portail Fournisseurs</h3>
+        <p style="color: var(--gray-600); font-size: 0.85rem; line-height: 1.7; margin-bottom: 20px;">
+          Espace collaboratif pour inviter fournisseurs et prestataires externes. Demande, partage et suivi de documents de conformite.
+        </p>
+        <div style="border-top: 1px solid var(--gray-100); padding-top: 16px;">
+          <div style="font-size: 0.72rem; color: var(--gray-500); line-height: 2;">
+            &rarr; Invite par email, acces restreint<br>
+            &rarr; Suivi des demandes en temps reel<br>
+            &rarr; <strong style="color: var(--gray-800);">Effet reseau fournisseurs</strong>
+          </div>
+        </div>
+        <div style="margin-top: 20px; font-size: 0.65rem; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase; color: var(--gray-500);">Impact : Lock-in supply chain</div>
+      </div>
+
+      <div style="background: var(--white); padding: 44px 36px;">
+        <div style="display: flex; justify-content: space-between; align-items: start; margin-bottom: 24px;">
+          <div style="font-size: 0.6rem; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase; padding: 4px 10px; background: var(--gray-100); color: var(--gray-600); border-radius: 100px;">Semaines 7-9</div>
+          <div style="font-family: var(--serif); font-size: 3rem; font-style: italic; color: var(--gray-100); line-height: 1;">5</div>
+        </div>
+        <h3 style="font-size: 1.35rem; font-weight: 500; margin-bottom: 12px;">Multi-Market Tracker</h3>
+        <p style="color: var(--gray-600); font-size: 0.85rem; line-height: 1.7; margin-bottom: 20px;">
+          Suivi des obligations par couple produit &times; marche (EU, UK, US). Vue matrice pour identifier les gaps geographiques.
+        </p>
+        <div style="border-top: 1px solid var(--gray-100); padding-top: 16px;">
+          <div style="font-size: 0.72rem; color: var(--gray-500); line-height: 2;">
+            &rarr; Matrice produit &times; pays<br>
+            &rarr; Regulations locales par juridiction<br>
+            &rarr; <strong style="color: var(--gray-800);">Indispensable pour l'export</strong>
+          </div>
+        </div>
+        <div style="margin-top: 20px; font-size: 0.65rem; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase; color: var(--gray-500);">Impact : Upsell international</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ── JUIN ── -->
+  <div style="margin-top: 48px;" class="reveal reveal-delay-4">
+    <div style="display: flex; align-items: center; gap: 16px; margin-bottom: 32px;">
+      <div style="font-size: 0.65rem; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase; padding: 6px 16px; background: var(--gray-800); color: white; border-radius: 100px;">Juin</div>
+      <div style="height: 1px; flex: 1; background: var(--gray-200);"></div>
+      <div style="font-size: 0.7rem; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase; color: var(--gray-400);">Generation & Prediction</div>
+    </div>
+    <div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 1px; background: var(--gray-200); border-radius: 20px; overflow: hidden;">
+      <div style="background: var(--black); color: var(--white); padding: 44px 36px;">
+        <div style="display: flex; justify-content: space-between; align-items: start; margin-bottom: 24px;">
+          <div style="font-size: 0.6rem; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase; padding: 4px 10px; background: rgba(124,58,237,0.15); color: #a78bfa; border-radius: 100px;">Semaines 9-11</div>
+          <div style="font-family: var(--serif); font-size: 3rem; font-style: italic; color: rgba(255,255,255,0.06); line-height: 1;">6</div>
+        </div>
+        <h3 style="color: var(--white); font-size: 1.35rem; font-weight: 500; margin-bottom: 12px;">Document Generator</h3>
+        <p style="color: var(--gray-400); font-size: 0.85rem; line-height: 1.7; margin-bottom: 20px;">
+          Generation automatique de documents officiels : Declaration de Conformite (DoC), dossiers techniques, rapports d'evaluation des risques. Pre-remplis avec les donnees Vigilis.
+        </p>
+        <div style="border-top: 1px solid rgba(255,255,255,0.08); padding-top: 16px;">
+          <div style="font-size: 0.72rem; color: var(--gray-500); line-height: 2;">
+            &rarr; Templates GPSR, REACH, EN 71, MDR<br>
+            &rarr; Export PDF pret a signer<br>
+            &rarr; <strong style="color: var(--gray-300);">Passe de la veille a l'action</strong>
+          </div>
+        </div>
+        <div style="margin-top: 20px; font-size: 0.65rem; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase; color: var(--gray-500);">Impact : Time-to-value &darr; 10x</div>
+      </div>
+
+      <div style="background: var(--black); color: var(--white); padding: 44px 36px;">
+        <div style="display: flex; justify-content: space-between; align-items: start; margin-bottom: 24px;">
+          <div style="font-size: 0.6rem; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase; padding: 4px 10px; background: rgba(124,58,237,0.15); color: #a78bfa; border-radius: 100px;">Semaines 10-13</div>
+          <div style="font-family: var(--serif); font-size: 3rem; font-style: italic; color: rgba(255,255,255,0.06); line-height: 1;">7</div>
+        </div>
+        <h3 style="color: var(--white); font-size: 1.35rem; font-weight: 500; margin-bottom: 12px;">Predictive Signals</h3>
+        <p style="color: var(--gray-400); font-size: 0.85rem; line-height: 1.7; margin-bottom: 20px;">
+          Scoring predictif par regulation : probabilite d'adoption, timeline estimee, impact produit projete. <em style="color: var(--gray-200);">"ESPR meubles — 85% de chances, 340 SKUs concernes, deadline Q1 2028."</em>
+        </p>
+        <div style="border-top: 1px solid rgba(255,255,255,0.08); padding-top: 16px;">
+          <div style="font-size: 0.72rem; color: var(--gray-500); line-height: 2;">
+            &rarr; Historique legislatif + enforcement patterns<br>
+            &rarr; Personne ne fait du vrai predictif en RegTech<br>
+            &rarr; <strong style="color: var(--gray-300);">Transforme la veille en strategie</strong>
+          </div>
+        </div>
+        <div style="margin-top: 20px; font-size: 0.65rem; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase; color: var(--gray-500);">Impact : Moat defensif</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Timeline visuelle -->
+  <div style="margin-top: 64px; padding: 40px; background: var(--gray-50); border-radius: 20px;" class="reveal reveal-delay-3">
+    <div style="font-size: 0.7rem; font-weight: 600; letter-spacing: 0.15em; text-transform: uppercase; color: var(--gray-400); margin-bottom: 24px;">Timeline detaillee — 13 semaines</div>
+    <div style="display: grid; grid-template-columns: repeat(13, 1fr); gap: 4px; margin-bottom: 16px;">
+      <div style="text-align: center; font-size: 0.6rem; color: var(--gray-400); padding-bottom: 8px;">S1</div>
+      <div style="text-align: center; font-size: 0.6rem; color: var(--gray-400); padding-bottom: 8px;">S2</div>
+      <div style="text-align: center; font-size: 0.6rem; color: var(--gray-400); padding-bottom: 8px;">S3</div>
+      <div style="text-align: center; font-size: 0.6rem; color: var(--gray-400); padding-bottom: 8px;">S4</div>
+      <div style="text-align: center; font-size: 0.6rem; color: var(--gray-400); padding-bottom: 8px;">S5</div>
+      <div style="text-align: center; font-size: 0.6rem; color: var(--gray-400); padding-bottom: 8px;">S6</div>
+      <div style="text-align: center; font-size: 0.6rem; color: var(--gray-400); padding-bottom: 8px;">S7</div>
+      <div style="text-align: center; font-size: 0.6rem; color: var(--gray-400); padding-bottom: 8px;">S8</div>
+      <div style="text-align: center; font-size: 0.6rem; color: var(--gray-400); padding-bottom: 8px;">S9</div>
+      <div style="text-align: center; font-size: 0.6rem; color: var(--gray-400); padding-bottom: 8px;">S10</div>
+      <div style="text-align: center; font-size: 0.6rem; color: var(--gray-400); padding-bottom: 8px;">S11</div>
+      <div style="text-align: center; font-size: 0.6rem; color: var(--gray-400); padding-bottom: 8px;">S12</div>
+      <div style="text-align: center; font-size: 0.6rem; color: var(--gray-400); padding-bottom: 8px;">S13</div>
+    </div>
+    <!-- Gantt bars -->
+    <div style="display: flex; flex-direction: column; gap: 6px;">
+      <div style="display: grid; grid-template-columns: repeat(13, 1fr); gap: 4px; align-items: center;">
+        <div style="grid-column: 1 / 4; background: var(--purple); border-radius: 6px; padding: 6px 10px; font-size: 0.65rem; font-weight: 600; color: white; white-space: nowrap; overflow: hidden;">Vigilis Agent</div>
+      </div>
+      <div style="display: grid; grid-template-columns: repeat(13, 1fr); gap: 4px; align-items: center;">
+        <div style="grid-column: 2 / 5; background: #6d28d9; border-radius: 6px; padding: 6px 10px; font-size: 0.65rem; font-weight: 600; color: white; white-space: nowrap; overflow: hidden;">Document Intelligence</div>
+      </div>
+      <div style="display: grid; grid-template-columns: repeat(13, 1fr); gap: 4px; align-items: center;">
+        <div style="grid-column: 5 / 8; background: var(--gray-800); border-radius: 6px; padding: 6px 10px; font-size: 0.65rem; font-weight: 600; color: white; white-space: nowrap; overflow: hidden;">API + Integrations</div>
+      </div>
+      <div style="display: grid; grid-template-columns: repeat(13, 1fr); gap: 4px; align-items: center;">
+        <div style="grid-column: 6 / 9; background: var(--gray-600); border-radius: 6px; padding: 6px 10px; font-size: 0.65rem; font-weight: 600; color: white; white-space: nowrap; overflow: hidden;">Portail Fournisseurs</div>
+      </div>
+      <div style="display: grid; grid-template-columns: repeat(13, 1fr); gap: 4px; align-items: center;">
+        <div style="grid-column: 7 / 10; background: var(--gray-600); border-radius: 6px; padding: 6px 10px; font-size: 0.65rem; font-weight: 600; color: white; white-space: nowrap; overflow: hidden;">Multi-Market Tracker</div>
+      </div>
+      <div style="display: grid; grid-template-columns: repeat(13, 1fr); gap: 4px; align-items: center;">
+        <div style="grid-column: 9 / 12; background: var(--purple); border-radius: 6px; padding: 6px 10px; font-size: 0.65rem; font-weight: 600; color: white; white-space: nowrap; overflow: hidden;">Document Generator</div>
+      </div>
+      <div style="display: grid; grid-template-columns: repeat(13, 1fr); gap: 4px; align-items: center;">
+        <div style="grid-column: 10 / 14; background: #6d28d9; border-radius: 6px; padding: 6px 10px; font-size: 0.65rem; font-weight: 600; color: white; white-space: nowrap; overflow: hidden;">Predictive Signals</div>
+      </div>
+    </div>
+    <!-- Month labels -->
+    <div style="display: grid; grid-template-columns: repeat(3, 1fr); margin-top: 16px; border-top: 1px solid var(--gray-200); padding-top: 12px;">
+      <div style="font-size: 0.7rem; font-weight: 600; color: var(--purple); text-transform: uppercase; letter-spacing: 0.1em;">Avril</div>
+      <div style="font-size: 0.7rem; font-weight: 600; color: var(--gray-600); text-transform: uppercase; letter-spacing: 0.1em; text-align: center;">Mai</div>
+      <div style="font-size: 0.7rem; font-weight: 600; color: var(--gray-600); text-transform: uppercase; letter-spacing: 0.1em; text-align: right;">Juin</div>
     </div>
   </div>
 
   <!-- Regulatory context -->
-  <div style="margin-top: 64px; padding: 40px; border: 1px solid var(--gray-100); border-radius: 16px;" class="reveal reveal-delay-3">
+  <div style="margin-top: 48px; padding: 40px; border: 1px solid var(--gray-100); border-radius: 16px;" class="reveal reveal-delay-3">
     <div style="font-size: 0.7rem; font-weight: 600; letter-spacing: 0.15em; text-transform: uppercase; color: var(--gray-400); margin-bottom: 16px;">Contexte reglementaire — Vague 2024&ndash;2028</div>
     <div style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 32px;">
       <div>
