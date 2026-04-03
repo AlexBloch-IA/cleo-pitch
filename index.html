@@ -1079,7 +1079,7 @@ footer {
 <section style="padding-top: 140px; padding-bottom: 140px;">
   <div class="section-label reveal">Roadmap Q2 2026</div>
   <h2 class="reveal reveal-delay-1">7 features en 90 jours.<br>Un seul objectif : <em style="font-family: var(--serif); font-style: italic;">l'indispensabilite</em>.</h2>
-  <p class="subtitle reveal reveal-delay-2">Chaque feature repond a un gap concurrentiel identifie. DPP textile mi-2027, ESPR par categorie, GPSR en vigueur — le timing est parfait pour construire la plateforme de reference.</p>
+  <p class="subtitle reveal reveal-delay-2">Chaque feature repond a un gap concurrentiel identifie face a Complir (DK, &euro;1.7M pre-seed, YC). Vanta et Drata ont lance leurs AI Agents en mars 2026. Le marche compliance bascule vers l'agentic — Vigilis doit y aller avec un angle unique : la veille predictive + la conformite produit AI-native.</p>
 
   <!-- ── AVRIL ── -->
   <div style="margin-top: 72px;" class="reveal reveal-delay-2">
@@ -1089,43 +1089,68 @@ footer {
       <div style="font-size: 0.7rem; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase; color: var(--gray-400);">Intelligence & Conversation</div>
     </div>
     <div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 1px; background: var(--gray-200); border-radius: 20px; overflow: hidden;">
+
+      <!-- 1. Vigilis Agent -->
       <div style="background: var(--black); color: var(--white); padding: 44px 36px;">
         <div style="display: flex; justify-content: space-between; align-items: start; margin-bottom: 24px;">
           <div style="font-size: 0.6rem; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase; padding: 4px 10px; background: rgba(124,58,237,0.15); color: #a78bfa; border-radius: 100px;">Semaines 1-3</div>
           <div style="font-family: var(--serif); font-size: 3rem; font-style: italic; color: rgba(255,255,255,0.06); line-height: 1;">1</div>
         </div>
         <h3 style="color: var(--white); font-size: 1.35rem; font-weight: 500; margin-bottom: 12px;">Vigilis Agent</h3>
-        <p style="color: var(--gray-400); font-size: 0.85rem; line-height: 1.7; margin-bottom: 20px;">
-          Chat IA conversationnel sur les donnees de conformite du client. <em style="color: var(--gray-200);">"Quels produits sont impactes par la mise a jour REACH SVHC ?"</em> — reponse immediate avec sources et obligations.
+        <p style="color: var(--gray-400); font-size: 0.85rem; line-height: 1.7; margin-bottom: 16px;">
+          Agent conversationnel RAG sur les donnees de conformite du client. Le Dir. Qualite demande <em style="color: var(--gray-200);">"Quels produits sont impactes par la mise a jour REACH SVHC ?"</em> — reponse immediate avec sources, obligations et liens vers les signaux.
         </p>
-        <div style="border-top: 1px solid rgba(255,255,255,0.08); padding-top: 16px;">
-          <div style="font-size: 0.72rem; color: var(--gray-500); line-height: 2;">
-            &rarr; RAG sur donnees org (Claude Sonnet)<br>
-            &rarr; Historique des signaux, regulations, obligations<br>
-            &rarr; ~$0.01-0.05 par question<br>
-            &rarr; <strong style="color: var(--gray-300);">Le feature qui rend le produit sticky</strong>
+        <div style="padding: 12px 16px; background: rgba(124,58,237,0.08); border-radius: 10px; margin-bottom: 16px;">
+          <div style="font-size: 0.65rem; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase; color: #a78bfa; margin-bottom: 8px;">Contexte marche</div>
+          <div style="font-size: 0.72rem; color: var(--gray-400); line-height: 1.8;">
+            Vanta a lance son "AI Agent 2.0" en mars 2026 — un GRC engineer 24/7. Drata s'est rebrand "Agentic Trust Management". 61% des equipes compliance signalent une fatigue reglementaire. Le chatbot n'est plus un nice-to-have, c'est un pre-requis.
           </div>
         </div>
-        <div style="margin-top: 20px; font-size: 0.65rem; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase; color: var(--gray-500);">Impact : Retention &times; Conversion</div>
+        <div style="border-top: 1px solid rgba(255,255,255,0.08); padding-top: 16px;">
+          <div style="font-size: 0.72rem; color: var(--gray-500); line-height: 2;">
+            &rarr; RAG multi-tenant avec isolation par org (Sonnet 4)<br>
+            &rarr; Citations tracables vers les sources<br>
+            &rarr; Audit trail complet de chaque reponse<br>
+            &rarr; ~$0.01-0.05 par question, marge &gt;90%<br>
+            &rarr; <strong style="color: var(--gray-300);">Le feature qui fait passer le churn annuel sous 5%</strong>
+          </div>
+        </div>
+        <div style="margin-top: 20px; display: flex; gap: 8px; flex-wrap: wrap;">
+          <div style="font-size: 0.6rem; font-weight: 600; padding: 3px 8px; background: rgba(124,58,237,0.12); color: #a78bfa; border-radius: 100px;">Retention</div>
+          <div style="font-size: 0.6rem; font-weight: 600; padding: 3px 8px; background: rgba(124,58,237,0.12); color: #a78bfa; border-radius: 100px;">Conversion</div>
+          <div style="font-size: 0.6rem; font-weight: 600; padding: 3px 8px; background: rgba(255,255,255,0.06); color: var(--gray-400); border-radius: 100px;">Complir l'a &check;</div>
+        </div>
       </div>
 
+      <!-- 2. Document Intelligence -->
       <div style="background: var(--white); padding: 44px 36px;">
         <div style="display: flex; justify-content: space-between; align-items: start; margin-bottom: 24px;">
           <div style="font-size: 0.6rem; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase; padding: 4px 10px; background: var(--gray-100); color: var(--gray-600); border-radius: 100px;">Semaines 2-4</div>
           <div style="font-family: var(--serif); font-size: 3rem; font-style: italic; color: var(--gray-100); line-height: 1;">2</div>
         </div>
         <h3 style="font-size: 1.35rem; font-weight: 500; margin-bottom: 12px;">Document Intelligence</h3>
-        <p style="color: var(--gray-600); font-size: 0.85rem; line-height: 1.7; margin-bottom: 20px;">
-          Upload et analyse automatique de documents internes : rapports de tests (SGS, Bureau Veritas), certificats, fiches produit. L'IA extrait exigences, non-conformites et gaps.
+        <p style="color: var(--gray-600); font-size: 0.85rem; line-height: 1.7; margin-bottom: 16px;">
+          Upload et analyse automatique de documents internes : rapports de tests (SGS, Bureau Veritas, TUV), certificats EN 71-1/2/3, fiches REACH Art. 33, DoC existantes. L'IA extrait les exigences, detecte les non-conformites et identifie les gaps par regulation.
         </p>
-        <div style="border-top: 1px solid var(--gray-100); padding-top: 16px;">
-          <div style="font-size: 0.72rem; color: var(--gray-500); line-height: 2;">
-            &rarr; PDF, Excel, Word — extraction structuree<br>
-            &rarr; Croisement auto avec regulations applicables<br>
-            &rarr; <strong style="color: var(--gray-800);">Remplace des heures de lecture manuelle</strong>
+        <div style="padding: 12px 16px; background: var(--gray-50); border-radius: 10px; margin-bottom: 16px;">
+          <div style="font-size: 0.65rem; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase; color: var(--gray-500); margin-bottom: 8px;">Contexte marche</div>
+          <div style="font-size: 0.72rem; color: var(--gray-500); line-height: 1.8;">
+            66% des entreprises remplacent leurs systemes manuels par du traitement IA de documents. Complir fait deja de l'extraction auto avec tracabilite vers le document source. Precision attendue : &gt;99% (benchmark LandingAI, Mistral Document AI).
           </div>
         </div>
-        <div style="margin-top: 20px; font-size: 0.65rem; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase; color: var(--gray-500);">Impact : Valeur percue immediate</div>
+        <div style="border-top: 1px solid var(--gray-100); padding-top: 16px;">
+          <div style="font-size: 0.72rem; color: var(--gray-500); line-height: 2;">
+            &rarr; PDF, Excel, Word, scans — OCR + extraction structuree<br>
+            &rarr; Croisement auto avec regulations applicables de l'org<br>
+            &rarr; Tracabilite : chaque extraction liee au document source<br>
+            &rarr; <strong style="color: var(--gray-800);">Remplace des heures de lecture manuelle par client</strong>
+          </div>
+        </div>
+        <div style="margin-top: 20px; display: flex; gap: 8px; flex-wrap: wrap;">
+          <div style="font-size: 0.6rem; font-weight: 600; padding: 3px 8px; background: var(--purple-light); color: var(--purple); border-radius: 100px;">Valeur immediate</div>
+          <div style="font-size: 0.6rem; font-weight: 600; padding: 3px 8px; background: var(--purple-light); color: var(--purple); border-radius: 100px;">Onboarding</div>
+          <div style="font-size: 0.6rem; font-weight: 600; padding: 3px 8px; background: var(--gray-100); color: var(--gray-500); border-radius: 100px;">Complir l'a &check;</div>
+        </div>
       </div>
     </div>
   </div>
@@ -1138,61 +1163,95 @@ footer {
       <div style="font-size: 0.7rem; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase; color: var(--gray-400);">Connectivite & Collaboration</div>
     </div>
     <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 1px; background: var(--gray-200); border-radius: 20px; overflow: hidden;">
+
+      <!-- 3. API + Integrations -->
       <div style="background: var(--white); padding: 44px 36px;">
         <div style="display: flex; justify-content: space-between; align-items: start; margin-bottom: 24px;">
           <div style="font-size: 0.6rem; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase; padding: 4px 10px; background: var(--gray-100); color: var(--gray-600); border-radius: 100px;">Semaines 5-7</div>
           <div style="font-family: var(--serif); font-size: 3rem; font-style: italic; color: var(--gray-100); line-height: 1;">3</div>
         </div>
         <h3 style="font-size: 1.35rem; font-weight: 500; margin-bottom: 12px;">API + Integrations</h3>
-        <p style="color: var(--gray-600); font-size: 0.85rem; line-height: 1.7; margin-bottom: 20px;">
-          REST API publique : signaux, regulations, obligations par produit. Webhooks temps reel. Connecteurs PLM, ERP, PIM natifs.
+        <p style="color: var(--gray-600); font-size: 0.85rem; line-height: 1.7; margin-bottom: 16px;">
+          REST API publique documentee : signaux, regulations, obligations par produit. Webhooks temps reel sur chaque changement reglementaire. Connecteurs natifs PLM, ERP, PIM.
         </p>
-        <div style="border-top: 1px solid var(--gray-100); padding-top: 16px;">
-          <div style="font-size: 0.72rem; color: var(--gray-500); line-height: 2;">
-            &rarr; SAP, Oracle, Akeneo, Centric PLM<br>
-            &rarr; Slack, Jira, Teams<br>
-            &rarr; <strong style="color: var(--gray-800);">Gate pour l'Enterprise</strong>
+        <div style="padding: 12px 16px; background: var(--gray-50); border-radius: 10px; margin-bottom: 16px;">
+          <div style="font-size: 0.65rem; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase; color: var(--gray-500); margin-bottom: 8px;">Contexte marche</div>
+          <div style="font-size: 0.72rem; color: var(--gray-500); line-height: 1.8;">
+            Complir connecte deja PIM/PLM/ERP dans un "unified data layer". C'est le gate #1 pour les deals Enterprise : sans API, pas de vente &gt;50K&euro; ACV. Les unified API (Merge, Apideck) simplifient l'integration multi-ERP.
           </div>
         </div>
-        <div style="margin-top: 20px; font-size: 0.65rem; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase; color: var(--gray-500);">Impact : ACV Enterprise</div>
+        <div style="border-top: 1px solid var(--gray-100); padding-top: 16px;">
+          <div style="font-size: 0.72rem; color: var(--gray-500); line-height: 2;">
+            &rarr; SAP, Oracle, Akeneo, Centric PLM, Infor<br>
+            &rarr; Slack, Jira, Teams — notifications en temps reel<br>
+            &rarr; API keys par org, rate limiting, audit logs<br>
+            &rarr; <strong style="color: var(--gray-800);">Pre-requis pour chaque deal Enterprise</strong>
+          </div>
+        </div>
+        <div style="margin-top: 20px; display: flex; gap: 8px; flex-wrap: wrap;">
+          <div style="font-size: 0.6rem; font-weight: 600; padding: 3px 8px; background: var(--purple-light); color: var(--purple); border-radius: 100px;">ACV Enterprise</div>
+          <div style="font-size: 0.6rem; font-weight: 600; padding: 3px 8px; background: var(--gray-100); color: var(--gray-500); border-radius: 100px;">Complir l'a &check;</div>
+        </div>
       </div>
 
+      <!-- 4. Portail Fournisseurs -->
       <div style="background: var(--white); padding: 44px 36px;">
         <div style="display: flex; justify-content: space-between; align-items: start; margin-bottom: 24px;">
           <div style="font-size: 0.6rem; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase; padding: 4px 10px; background: var(--gray-100); color: var(--gray-600); border-radius: 100px;">Semaines 6-8</div>
           <div style="font-family: var(--serif); font-size: 3rem; font-style: italic; color: var(--gray-100); line-height: 1;">4</div>
         </div>
         <h3 style="font-size: 1.35rem; font-weight: 500; margin-bottom: 12px;">Portail Fournisseurs</h3>
-        <p style="color: var(--gray-600); font-size: 0.85rem; line-height: 1.7; margin-bottom: 20px;">
-          Espace collaboratif pour inviter fournisseurs et prestataires externes. Demande, partage et suivi de documents de conformite.
+        <p style="color: var(--gray-600); font-size: 0.85rem; line-height: 1.7; margin-bottom: 16px;">
+          Espace collaboratif pour inviter fournisseurs et prestataires externes. Demande, partage et suivi de documents de conformite. Fin des echanges par email et des fichiers perdus.
         </p>
-        <div style="border-top: 1px solid var(--gray-100); padding-top: 16px;">
-          <div style="font-size: 0.72rem; color: var(--gray-500); line-height: 2;">
-            &rarr; Invite par email, acces restreint<br>
-            &rarr; Suivi des demandes en temps reel<br>
-            &rarr; <strong style="color: var(--gray-800);">Effet reseau fournisseurs</strong>
+        <div style="padding: 12px 16px; background: var(--gray-50); border-radius: 10px; margin-bottom: 16px;">
+          <div style="font-size: 0.65rem; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase; color: var(--gray-500); margin-bottom: 8px;">Contexte marche</div>
+          <div style="font-size: 0.72rem; color: var(--gray-500); line-height: 1.8;">
+            Complir a un "Shared Workspace" qui connecte equipes internes et fournisseurs externes. SAP Business Network, Source Intelligence font du supplier collaboration a grande echelle. L'effet reseau est le moat ultime : chaque fournisseur invite = un verrou supplementaire.
           </div>
         </div>
-        <div style="margin-top: 20px; font-size: 0.65rem; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase; color: var(--gray-500);">Impact : Lock-in supply chain</div>
+        <div style="border-top: 1px solid var(--gray-100); padding-top: 16px;">
+          <div style="font-size: 0.72rem; color: var(--gray-500); line-height: 2;">
+            &rarr; Invite par email, acces restreint par document<br>
+            &rarr; Dashboard fournisseur : demandes en attente, historique<br>
+            &rarr; Relances automatiques + deadline tracking<br>
+            &rarr; <strong style="color: var(--gray-800);">Chaque fournisseur invite = lock-in</strong>
+          </div>
+        </div>
+        <div style="margin-top: 20px; display: flex; gap: 8px; flex-wrap: wrap;">
+          <div style="font-size: 0.6rem; font-weight: 600; padding: 3px 8px; background: var(--purple-light); color: var(--purple); border-radius: 100px;">Lock-in supply chain</div>
+          <div style="font-size: 0.6rem; font-weight: 600; padding: 3px 8px; background: var(--gray-100); color: var(--gray-500); border-radius: 100px;">Complir l'a &check;</div>
+        </div>
       </div>
 
+      <!-- 5. Multi-Market Tracker -->
       <div style="background: var(--white); padding: 44px 36px;">
         <div style="display: flex; justify-content: space-between; align-items: start; margin-bottom: 24px;">
           <div style="font-size: 0.6rem; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase; padding: 4px 10px; background: var(--gray-100); color: var(--gray-600); border-radius: 100px;">Semaines 7-9</div>
           <div style="font-family: var(--serif); font-size: 3rem; font-style: italic; color: var(--gray-100); line-height: 1;">5</div>
         </div>
         <h3 style="font-size: 1.35rem; font-weight: 500; margin-bottom: 12px;">Multi-Market Tracker</h3>
-        <p style="color: var(--gray-600); font-size: 0.85rem; line-height: 1.7; margin-bottom: 20px;">
-          Suivi des obligations par couple produit &times; marche (EU, UK, US). Vue matrice pour identifier les gaps geographiques.
+        <p style="color: var(--gray-600); font-size: 0.85rem; line-height: 1.7; margin-bottom: 16px;">
+          Suivi des obligations par couple produit &times; marche (EU, UK, US, Asie). Vue matrice pour identifier les gaps geographiques d'un coup d'oeil. <em style="color: var(--black);">"Ce produit est conforme EU mais pas US — voici ce qui manque."</em>
         </p>
-        <div style="border-top: 1px solid var(--gray-100); padding-top: 16px;">
-          <div style="font-size: 0.72rem; color: var(--gray-500); line-height: 2;">
-            &rarr; Matrice produit &times; pays<br>
-            &rarr; Regulations locales par juridiction<br>
-            &rarr; <strong style="color: var(--gray-800);">Indispensable pour l'export</strong>
+        <div style="padding: 12px 16px; background: var(--gray-50); border-radius: 10px; margin-bottom: 16px;">
+          <div style="font-size: 0.65rem; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase; color: var(--gray-500); margin-bottom: 8px;">Contexte marche</div>
+          <div style="font-size: 0.72rem; color: var(--gray-500); line-height: 1.8;">
+            Complir couvre 40+ marches avec 106K+ produits monitores. TraceLink et UL Solutions font du country compliance a grande echelle. GPSR (en vigueur dec 2024) impacte TOUS les produits non-food vendus en EU — la plus grande reforme en 20 ans.
           </div>
         </div>
-        <div style="margin-top: 20px; font-size: 0.65rem; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase; color: var(--gray-500);">Impact : Upsell international</div>
+        <div style="border-top: 1px solid var(--gray-100); padding-top: 16px;">
+          <div style="font-size: 0.72rem; color: var(--gray-500); line-height: 2;">
+            &rarr; Matrice produit &times; pays avec statut visuel<br>
+            &rarr; Regulations locales par juridiction (EU, UK, US, CA, AU)<br>
+            &rarr; Alertes sur nouvelles exigences par marche<br>
+            &rarr; <strong style="color: var(--gray-800);">Upsell naturel : chaque nouveau marche = revenue</strong>
+          </div>
+        </div>
+        <div style="margin-top: 20px; display: flex; gap: 8px; flex-wrap: wrap;">
+          <div style="font-size: 0.6rem; font-weight: 600; padding: 3px 8px; background: var(--purple-light); color: var(--purple); border-radius: 100px;">Upsell international</div>
+          <div style="font-size: 0.6rem; font-weight: 600; padding: 3px 8px; background: var(--gray-100); color: var(--gray-500); border-radius: 100px;">Complir l'a &check;</div>
+        </div>
       </div>
     </div>
   </div>
@@ -1205,42 +1264,67 @@ footer {
       <div style="font-size: 0.7rem; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase; color: var(--gray-400);">Generation & Prediction</div>
     </div>
     <div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 1px; background: var(--gray-200); border-radius: 20px; overflow: hidden;">
+
+      <!-- 6. Document Generator -->
       <div style="background: var(--black); color: var(--white); padding: 44px 36px;">
         <div style="display: flex; justify-content: space-between; align-items: start; margin-bottom: 24px;">
           <div style="font-size: 0.6rem; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase; padding: 4px 10px; background: rgba(124,58,237,0.15); color: #a78bfa; border-radius: 100px;">Semaines 9-11</div>
           <div style="font-family: var(--serif); font-size: 3rem; font-style: italic; color: rgba(255,255,255,0.06); line-height: 1;">6</div>
         </div>
         <h3 style="color: var(--white); font-size: 1.35rem; font-weight: 500; margin-bottom: 12px;">Document Generator</h3>
-        <p style="color: var(--gray-400); font-size: 0.85rem; line-height: 1.7; margin-bottom: 20px;">
-          Generation automatique de documents officiels : Declaration de Conformite (DoC), dossiers techniques, rapports d'evaluation des risques. Pre-remplis avec les donnees Vigilis.
+        <p style="color: var(--gray-400); font-size: 0.85rem; line-height: 1.7; margin-bottom: 16px;">
+          Generation automatique de documents officiels : Declaration de Conformite (DoC), dossiers techniques, rapports d'evaluation des risques GPSR. Pre-remplis avec les donnees Vigilis, prets a signer.
         </p>
-        <div style="border-top: 1px solid rgba(255,255,255,0.08); padding-top: 16px;">
-          <div style="font-size: 0.72rem; color: var(--gray-500); line-height: 2;">
-            &rarr; Templates GPSR, REACH, EN 71, MDR<br>
-            &rarr; Export PDF pret a signer<br>
-            &rarr; <strong style="color: var(--gray-300);">Passe de la veille a l'action</strong>
+        <div style="padding: 12px 16px; background: rgba(124,58,237,0.08); border-radius: 10px; margin-bottom: 16px;">
+          <div style="font-size: 0.65rem; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase; color: #a78bfa; margin-bottom: 8px;">Contexte marche</div>
+          <div style="font-size: 0.72rem; color: var(--gray-400); line-height: 1.8;">
+            Complir genere des DoC "en minutes, pas en jours". RegDesk automatise les DoC pour les medical devices. RedComply fait de la DoC en un tap pour la RED/EN 18031. La generation de documents est le moment ou on passe de "veille" a "action" — c'est la que la willingness-to-pay explose.
           </div>
         </div>
-        <div style="margin-top: 20px; font-size: 0.65rem; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase; color: var(--gray-500);">Impact : Time-to-value &darr; 10x</div>
+        <div style="border-top: 1px solid rgba(255,255,255,0.08); padding-top: 16px;">
+          <div style="font-size: 0.72rem; color: var(--gray-500); line-height: 2;">
+            &rarr; Templates GPSR, REACH, EN 71, MDR, AI Act Annex V<br>
+            &rarr; Export PDF pret a signer + versioning<br>
+            &rarr; Validation IA des champs obligatoires<br>
+            &rarr; <strong style="color: var(--gray-300);">Transforme la veille en deliverable facturable</strong>
+          </div>
+        </div>
+        <div style="margin-top: 20px; display: flex; gap: 8px; flex-wrap: wrap;">
+          <div style="font-size: 0.6rem; font-weight: 600; padding: 3px 8px; background: rgba(124,58,237,0.12); color: #a78bfa; border-radius: 100px;">Time-to-value &darr;10x</div>
+          <div style="font-size: 0.6rem; font-weight: 600; padding: 3px 8px; background: rgba(124,58,237,0.12); color: #a78bfa; border-radius: 100px;">Revenue par doc</div>
+          <div style="font-size: 0.6rem; font-weight: 600; padding: 3px 8px; background: rgba(255,255,255,0.06); color: var(--gray-400); border-radius: 100px;">Complir l'a &check;</div>
+        </div>
       </div>
 
+      <!-- 7. Predictive Signals -->
       <div style="background: var(--black); color: var(--white); padding: 44px 36px;">
         <div style="display: flex; justify-content: space-between; align-items: start; margin-bottom: 24px;">
           <div style="font-size: 0.6rem; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase; padding: 4px 10px; background: rgba(124,58,237,0.15); color: #a78bfa; border-radius: 100px;">Semaines 10-13</div>
           <div style="font-family: var(--serif); font-size: 3rem; font-style: italic; color: rgba(255,255,255,0.06); line-height: 1;">7</div>
         </div>
         <h3 style="color: var(--white); font-size: 1.35rem; font-weight: 500; margin-bottom: 12px;">Predictive Signals</h3>
-        <p style="color: var(--gray-400); font-size: 0.85rem; line-height: 1.7; margin-bottom: 20px;">
-          Scoring predictif par regulation : probabilite d'adoption, timeline estimee, impact produit projete. <em style="color: var(--gray-200);">"ESPR meubles — 85% de chances, 340 SKUs concernes, deadline Q1 2028."</em>
+        <p style="color: var(--gray-400); font-size: 0.85rem; line-height: 1.7; margin-bottom: 16px;">
+          Scoring predictif par regulation : probabilite d'adoption, timeline estimee, impact produit projete. <em style="color: var(--gray-200);">"ESPR meubles — 85% de chances d'adoption, 340 SKUs concernes, deadline estimee Q1 2028."</em>
         </p>
+        <div style="padding: 12px 16px; background: rgba(124,58,237,0.08); border-radius: 10px; margin-bottom: 16px;">
+          <div style="font-size: 0.65rem; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase; color: #a78bfa; margin-bottom: 8px;">Contexte marche</div>
+          <div style="font-size: 0.72rem; color: var(--gray-400); line-height: 1.8;">
+            Personne ne fait du vrai predictif en conformite produit. Ni Complir, ni Vanta, ni Drata. Colorado AI Act (juin 2026), EU AI Act Code of Practice (juin 2026), ESPR working plan 2025-2030 — la complexite reglementaire explose. L'evolution va vers le predictif et le prescriptif.
+          </div>
+        </div>
         <div style="border-top: 1px solid rgba(255,255,255,0.08); padding-top: 16px;">
           <div style="font-size: 0.72rem; color: var(--gray-500); line-height: 2;">
             &rarr; Historique legislatif + enforcement patterns<br>
-            &rarr; Personne ne fait du vrai predictif en RegTech<br>
-            &rarr; <strong style="color: var(--gray-300);">Transforme la veille en strategie</strong>
+            &rarr; Scoring : probabilite &times; impact &times; timeline<br>
+            &rarr; Alertes proactives : "preparez-vous AVANT l'entree en vigueur"<br>
+            &rarr; <strong style="color: var(--gray-300);">Notre moat — personne ne l'a, personne ne le fait</strong>
           </div>
         </div>
-        <div style="margin-top: 20px; font-size: 0.65rem; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase; color: var(--gray-500);">Impact : Moat defensif</div>
+        <div style="margin-top: 20px; display: flex; gap: 8px; flex-wrap: wrap;">
+          <div style="font-size: 0.6rem; font-weight: 600; padding: 3px 8px; background: rgba(124,58,237,0.12); color: #a78bfa; border-radius: 100px;">Moat defensif</div>
+          <div style="font-size: 0.6rem; font-weight: 600; padding: 3px 8px; background: rgba(124,58,237,0.12); color: #a78bfa; border-radius: 100px;">Unique sur le marche</div>
+          <div style="font-size: 0.6rem; font-weight: 600; padding: 3px 8px; background: rgba(34,197,94,0.12); color: #4ade80; border-radius: 100px;">Complir ne l'a pas &cross;</div>
+        </div>
       </div>
     </div>
   </div>
@@ -1295,25 +1379,56 @@ footer {
     </div>
   </div>
 
+  <!-- Competitive gap summary -->
+  <div style="margin-top: 48px; display: grid; grid-template-columns: repeat(2, 1fr); gap: 24px;" class="reveal reveal-delay-3">
+    <div style="padding: 32px; background: var(--gray-50); border-radius: 16px;">
+      <div style="font-size: 0.7rem; font-weight: 600; letter-spacing: 0.15em; text-transform: uppercase; color: var(--gray-400); margin-bottom: 16px;">Complir a, nous pas (encore)</div>
+      <div style="font-size: 0.8rem; color: var(--gray-600); line-height: 2;">
+        &check; AI Chat sur donnees conformite<br>
+        &check; Extraction IA de documents uploades<br>
+        &check; Connecteurs PIM/PLM/ERP natifs<br>
+        &check; Portail collaboratif fournisseurs<br>
+        &check; Suivi multi-marches (40+ pays)<br>
+        &check; Generation DoC + dossiers techniques<br>
+        &check; Traduction 40+ langues (labeling)<br>
+        &check; Plugins Adobe (Illustrator, InDesign)<br>
+        &check; Marketing claims scanning
+      </div>
+    </div>
+    <div style="padding: 32px; background: var(--black); border-radius: 16px; color: var(--white);">
+      <div style="font-size: 0.7rem; font-weight: 600; letter-spacing: 0.15em; text-transform: uppercase; color: var(--gray-400); margin-bottom: 16px;">Nous avons, Complir non</div>
+      <div style="font-size: 0.8rem; color: var(--gray-300); line-height: 2;">
+        &check; Veille reglementaire automatisee (pipeline AI)<br>
+        &check; Scoring de risque par signal (RED/ORANGE/YELLOW/GREEN)<br>
+        &check; Predictive Signals (probabilite, timeline, impact)<br>
+        &check; Impact business par produit/regulation<br>
+        &check; Credit-based billing (usage flexible)<br>
+        &check; Multi-persona compliance (profils metiers)<br>
+        &check; Echeancier reglementaire avec deadlines<br>
+        &check; 100% focus conformite produit FR/EU
+      </div>
+    </div>
+  </div>
+
   <!-- Regulatory context -->
   <div style="margin-top: 48px; padding: 40px; border: 1px solid var(--gray-100); border-radius: 16px;" class="reveal reveal-delay-3">
     <div style="font-size: 0.7rem; font-weight: 600; letter-spacing: 0.15em; text-transform: uppercase; color: var(--gray-400); margin-bottom: 16px;">Contexte reglementaire — Vague 2024&ndash;2028</div>
     <div style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 32px;">
       <div>
         <div style="font-weight: 600; font-size: 0.9rem; margin-bottom: 4px;">GPSR</div>
-        <div style="font-size: 0.8rem; color: var(--gray-500); line-height: 1.6;">En vigueur depuis dec 2024. Risk assessment obligatoire pour TOUS les produits non-food EU.</div>
+        <div style="font-size: 0.8rem; color: var(--gray-500); line-height: 1.6;">En vigueur depuis dec 2024. Plus grande reforme de la securite produit EU en 20 ans. Impacte TOUS les produits non-food.</div>
       </div>
       <div>
         <div style="font-weight: 600; font-size: 0.9rem; margin-bottom: 4px;">DPP Textiles</div>
-        <div style="font-size: 0.8rem; color: var(--gray-500); line-height: 1.6;">Obligatoire mi-2027. QR code + donnees machine-readable. Impact Decathlon, Longchamp.</div>
+        <div style="font-size: 0.8rem; color: var(--gray-500); line-height: 1.6;">Obligatoire mi-2027. QR code + donnees machine-readable. Impact Decathlon, Longchamp, H&amp;M.</div>
       </div>
       <div>
         <div style="font-weight: 600; font-size: 0.9rem; margin-bottom: 4px;">ESPR</div>
         <div style="font-size: 0.8rem; color: var(--gray-500); line-height: 1.6;">Working plan 2025-2030 : appareils (2026), textiles (2027), meubles (2028). Chaque categorie = nouveau marche.</div>
       </div>
       <div>
-        <div style="font-weight: 600; font-size: 0.9rem; margin-bottom: 4px;">AGEC + EPR</div>
-        <div style="font-size: 0.8rem; color: var(--gray-500); line-height: 1.6;">France en avance : indice durabilite, destruction invendus interdite, reporting digital.</div>
+        <div style="font-weight: 600; font-size: 0.9rem; margin-bottom: 4px;">AI Act + Colorado</div>
+        <div style="font-size: 0.8rem; color: var(--gray-500); line-height: 1.6;">EU AI Act Code of Practice (juin 2026). Colorado AI Act (30 juin 2026). La compliance IA devient un marche en soi.</div>
       </div>
     </div>
   </div>
